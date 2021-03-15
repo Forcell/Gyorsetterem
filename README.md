@@ -1,0 +1,2 @@
+# Gyorsetterem
+Vizuális programozás beadandó
