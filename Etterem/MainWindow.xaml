@@ -1,0 +1,104 @@
+﻿<Window x:Class="Etterem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Etterem"
+        mc:Ignorable="d"
+        Icon="Images/Logo.png"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="McTömlek" Height="600" Width="1200" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+
+    <Grid>
+
+        <!--Elrendezés-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <materialDesign:ColorZone Mode="PrimaryMid" Grid.ColumnSpan="2" HorizontalAlignment="Stretch">
+
+            <!--Fejléc-->
+            <Grid>
+
+
+                <!--Keresés-->
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <TextBox materialDesign:HintAssist.Hint="KERESÉS" VerticalAlignment="Center" Foreground="White" Width="300" FontSize="15" materialDesign:TextFieldAssist.UnderlineBrush="White"/>
+                    <materialDesign:PackIcon Kind="Magnify" Foreground="White" Width="25" Height="25" VerticalAlignment="Center" Margin="5"/>
+                </StackPanel>
+
+
+                <!--Kosár-->
+                <!--<Button Content="" Margin="1114,11,61,10" Width="35" Height="25"/>-->
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="50, 0">
+                    <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" HorizontalAlignment="Right" StaysOpen="False">
+                        <materialDesign:PopupBox.ToggleContent>
+                            <materialDesign:PackIcon Kind="Cart" Foreground="White" Width="25" Height="25" VerticalAlignment="Center" Margin="5" MouseUp="PackIcon_MouseUp"/>
+                        </materialDesign:PopupBox.ToggleContent>
+                        <StackPanel Width="150">
+                            <TextBlock x:Name="KosárSzöveg" Text="Üres"/>
+                        </StackPanel>
+                    </materialDesign:PopupBox>
+                    <TextBlock VerticalAlignment="Center" Foreground="White" FontSize="18" Text="5"/>
+                </StackPanel>
+
+
+                <!--Beállítások-->
+                <StackPanel HorizontalAlignment="Right" Margin="10">
+                    <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" HorizontalAlignment="Right" StaysOpen="False">
+                        <StackPanel Width="150">
+                            <Button Name="btSettings" Content="Settings"/>
+                            <Button Name="btLogin" Content="Login" Click="btLogin_Click"/>
+                            <Button Name="btExit" Content="Exit" Click="btExit_Click"/>
+                        </StackPanel>
+                    </materialDesign:PopupBox>
+                </StackPanel>
+
+
+            </Grid>
+        </materialDesign:ColorZone>
+
+
+        <!--Bal oldali sáv-->
+        <Grid HorizontalAlignment="Stretch" Grid.Row="1" Background="{StaticResource PrimaryHueMidBrush}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="17*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="53*"/>
+            </Grid.RowDefinitions>
+
+
+            <!--Logó-->
+            <Grid Grid.Row="0" Background="White" Grid.ColumnSpan="2">
+                <Image Source="Images/McTomlek2.png"/>
+            </Grid>
+
+
+            <!--Menü-->
+            <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Grid.Row="1" Grid.ColumnSpan="2">
+                <StackPanel x:Name="Menu" Margin="10"/>
+            </ScrollViewer>
+
+        </Grid>
+
+
+        <!--Megjelenítés-->
+        <Grid Grid.Row="1" Grid.Column="1">
+            <ScrollViewer>
+                <StackPanel x:Name="StackPanelMain" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch">
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+
+    </Grid>
+</Window>

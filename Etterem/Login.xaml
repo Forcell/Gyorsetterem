@@ -1,0 +1,57 @@
+﻿<Window x:Class="Etterem.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Etterem"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Login" Height="500" Width="350" 
+        ResizeMode="NoResize" 
+        Icon="Images/Logo.png"
+        WindowStartupLocation="CenterScreen"  
+        FontFamily="Segoe UI Emoji">
+    <Grid>
+        <Rectangle Height="50" VerticalAlignment="Top" Grid.Row="1">
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Color="GhostWhite"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        
+        <!--Kék rész-->
+        <Rectangle Height="280" VerticalAlignment="Top" Grid.Row="1">
+            <Rectangle.Fill>
+                <LinearGradientBrush>
+                    <GradientStop Color="#5796fa"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <!--Bejelentkezés cella színe-->
+        <Rectangle Width="280" Height="240" VerticalAlignment="Bottom" Margin="0,80" RadiusY="0" RadiusX="0" Fill="GhostWhite" Grid.Row="1">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
+            </Rectangle.Effect>
+        </Rectangle>
+        
+        <!--Bejelentkezés cella tartalma-->
+        <Grid VerticalAlignment="Bottom" Margin="35,80" Height="240" Grid.Row="1">
+            <Label Content="BEJELENTKEZÉS" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18"/>
+            <StackPanel VerticalAlignment="Center" Margin="15">
+                <TextBox Margin="0,10" materialDesign:HintAssist.Hint="EMAIL" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                <PasswordBox Margin="0,10" materialDesign:HintAssist.Hint="JELSZÓ" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+            </StackPanel>
+        </Grid>
+        
+        <!--Bejelentkezés gomb-->
+        <Button Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" Content="BEJELENTKEZÉS" Grid.Row="1"/>
+        
+        <!--Elfelejtett jelszó-->
+        <TextBlock Text="Elfelejtett jelszó?" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="30" Foreground="Gray" Cursor="Hand" Grid.Row="1" ToolTip="Így jártál! xd &#x0a;Írtad volna fel lol "/>
+        
+        <!--Kép-->
+        <Image Source="Images/McTomlek.png" Width="120" Height="120" VerticalAlignment="Top" Margin="30" Grid.Row="1"/>
+    </Grid>
+</Window>

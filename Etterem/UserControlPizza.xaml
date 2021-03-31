@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="Etterem.UserControlPizza"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Etterem" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             FontFamily="Segoe UI Emoji" >
+    <Grid>
+        
+        <!--Elrendezés-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="225"/>
+            <RowDefinition Height="225"/>
+        </Grid.RowDefinitions>
+
+        
+        <!--1.pizza-->
+        <!--Kép-->
+        <Border Margin="20,5,20,0" Grid.Column="0" Height="150" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="1">
+            <Image Source="Images/dopping.jpg" Stretch="UniformToFill"/>
+        </Border>
+
+        <!--Figyelmeztetés-->
+        <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" HorizontalAlignment="Right" StaysOpen="False" Margin="0,5,24,194">
+            <materialDesign:PopupBox.ToggleContent >
+                <materialDesign:PackIcon Kind="Warning" />
+            </materialDesign:PopupBox.ToggleContent >
+            <StackPanel Width="auto">
+                <materialDesign:PackIcon Kind="Gluten" HorizontalAlignment="Right" ToolTip="Glutén"/>
+            </StackPanel>
+        </materialDesign:PopupBox>
+
+        <!--Pizza neve, ára, kosárba gomb-->
+        <TextBlock x:Name="pizza1" Text="Pizza - $25.00" VerticalAlignment="Top" Grid.Column="0" HorizontalAlignment="Center" Margin="0,167,0,0" Foreground="Black"/>
+        <Button x:Name="pizzab1" Content="Kosárba" FontSize="10" VerticalAlignment="Top" Grid.Column="0" HorizontalAlignment="Center" Height="20" Width="80" Margin="0,195,0,0" Click="pizzab1_Click"/>
+
+  
+        <!--2.pizza-->
+        <Border Margin="20,5,20,0" Grid.Column="1" Height="150" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="1">
+            <Image Source="Images/amerikana.jpg" Stretch="UniformToFill"/>
+        </Border>
+
+        <!--Figyelmeztetés-->
+        <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" HorizontalAlignment="Right" Grid.Column="1" StaysOpen="False" Margin="0,5,24,194">
+            <materialDesign:PopupBox.ToggleContent>
+                <materialDesign:PackIcon Kind="Warning"/>
+            </materialDesign:PopupBox.ToggleContent>
+            <StackPanel Width="auto">
+                <materialDesign:PackIcon Kind="Gluten" ToolTip="Glutén"/>
+                <materialDesign:PackIcon Kind="Cow" ToolTip="Tej"/>
+            </StackPanel>
+        </materialDesign:PopupBox>
+
+        <!--Pizza neve, ára, kosárba gomb-->
+        <TextBlock x:Name="pizza2" Text="Másik Pizza - $25.00" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Center" Margin="0,167,0,0" Foreground="Black"/>
+        <Button x:Name="pizzab2" Content="Kosárba" FontSize="10" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Center" Height="20" Width="80" Margin="0,195,0,0" Click="pizzab2_Click"/>
+
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "gGqI53s5XAviVN1Gw2fCeyUvNdZ/loFMkIYd52o08ONWOJfyX320mziUH57elvNagKpkBUh3zGfxHfyr0Tsg/w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mashu\\Documents\\GitHub\\Gyorsetterem\\Etterem\\Etterem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mashu\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
+    "C:\\Users\\Mashu\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
