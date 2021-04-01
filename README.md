@@ -1,4 +1,4 @@
 # Gyorsetterem
 Vizuális programozás beadandó
 
-Ez egy gyorsétteremnek megrendelői oldala
+Ez egy gyorsétteremnek a megrendelői oldala
