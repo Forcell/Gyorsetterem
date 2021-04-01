@@ -35,17 +35,22 @@
 
 
                 <!--Kosár-->
-                <!--<Button Content="" Margin="1114,11,61,10" Width="35" Height="25"/>-->
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="50, 0">
                     <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" HorizontalAlignment="Right" StaysOpen="False">
                         <materialDesign:PopupBox.ToggleContent>
+                            <!--Kosár ikon-->
                             <materialDesign:PackIcon Kind="Cart" Foreground="White" Width="25" Height="25" VerticalAlignment="Center" Margin="5" MouseUp="PackIcon_MouseUp"/>
                         </materialDesign:PopupBox.ToggleContent>
                         <StackPanel Width="150">
-                            <TextBlock x:Name="KosárSzöveg" Text="Üres"/>
+                            <ListBox x:Name="KosarLista">
+                            </ListBox>
+                            <!--Ürítés-->
+                            <Button Name="Urites" Content="Ürítés" Click="Urites_Click" HorizontalContentAlignment="Center"/>
+                            <!--Fizetés-->
+                            <Button Name="Fizetes" Content="Fizetés" HorizontalContentAlignment="Center"/>
                         </StackPanel>
                     </materialDesign:PopupBox>
-                    <TextBlock VerticalAlignment="Center" Foreground="White" FontSize="18" Text="5"/>
+                    <TextBlock VerticalAlignment="Center" Foreground="White" FontSize="18" x:Name="KosarOsszesDarab" Text="0" MouseUp="KosarDarab"/>
                 </StackPanel>
 
 

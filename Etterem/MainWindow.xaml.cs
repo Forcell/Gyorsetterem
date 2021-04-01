@@ -29,7 +29,7 @@ namespace Etterem
             InitializeComponent();
 
             //Kezdőlap menüpont
-            var Home = new ItemMenu("Kezdőlap", new UserControl(), PackIconKind.Home);
+            //var Home = new ItemMenu("Kezdőlap", new UserControl(), PackIconKind.Home);
 
 
             //Gyorsételek menüpont
@@ -49,11 +49,18 @@ namespace Etterem
 
 
             //Egészséges ételek menüpont
-            var Egeszseges = new ItemMenu("Egészséges ételeink", new UserControl(), PackIconKind.FoodAllergyOff);
+            //var Egeszseges = new ItemMenu("Egészséges ételeink", new UserControl(), PackIconKind.FoodAllergyOff);
 
 
             //Desszertek menüpont
-            var Desszert = new ItemMenu("Desszertek", new UserControl(), PackIconKind.Biscuit);
+            //var Desszert = new ItemMenu("Desszertek", new UserControl(), PackIconKind.Biscuit);
+
+
+            //Egyéb ételek menüpont
+            var menuEgyeb = new List<SubItem>();
+            menuEgyeb.Add(new SubItem("Egészséges ételeink"));
+            menuEgyeb.Add(new SubItem("Desszertek"));
+            var Egyeb = new ItemMenu("Egyéb ételeink", menuEgyeb, PackIconKind.AllergenOff);
 
 
             //Italok menüpont
@@ -65,11 +72,12 @@ namespace Etterem
             var Ital = new ItemMenu("Italok", menuItal, PackIconKind.Drink);
 
             
-            Menu.Children.Add(new UserControlMenuItem(Home, this));
+            //Menu.Children.Add(new UserControlMenuItem(Home, this));
             Menu.Children.Add(new UserControlMenuItem(Gyors, this));
             Menu.Children.Add(new UserControlMenuItem(Foetel, this));
-            Menu.Children.Add(new UserControlMenuItem(Egeszseges, this));
-            Menu.Children.Add(new UserControlMenuItem(Desszert, this));
+            //Menu.Children.Add(new UserControlMenuItem(Egeszseges, this));
+            //Menu.Children.Add(new UserControlMenuItem(Desszert, this));
+            Menu.Children.Add(new UserControlMenuItem(Egyeb, this));
             Menu.Children.Add(new UserControlMenuItem(Ital, this));
         }
 
@@ -102,6 +110,20 @@ namespace Etterem
         private void PackIcon_MouseUp(object sender, MouseButtonEventArgs e)
         {
 
+        }
+
+        private void KosarDarab(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+
+        //Kosár ürítése, számláló nullázása
+        private void Urites_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.Instance.KosarLista.Items.Clear();
+            MainWindow.Instance.KosarOsszesDarab.Text = "0";
+            UserControlPizza.Instance.szamlalo = 0;
         }
     }
 }
