@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "gGqI53s5XAviVN1Gw2fCeyUvNdZ/loFMkIYd52o08ONWOJfyX320mziUH57elvNagKpkBUh3zGfxHfyr0Tsg/w==",
+  "dgSpecHash": "rTMsuqQlRV3hb4JHe7v0GBzpDOmcDTjUr+xThzHRdcGfqP/V+sxcA+7VqPwVEOiySy0t1SzJvX2Ee17QsbyrnA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mashu\\Documents\\GitHub\\Gyorsetterem\\Etterem\\Etterem.csproj",
+  "projectFilePath": "C:\\Users\\matek\\Desktop\\Etterem\\Etterem.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Mashu\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
-    "C:\\Users\\Mashu\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512"
+    "C:\\Users\\matek\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
+    "C:\\Users\\matek\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512"
   ],
   "logs": []
 }

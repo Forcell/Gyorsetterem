@@ -17,40 +17,64 @@ namespace Etterem
     /// <summary>
     /// Interaction logic for UserControlPizza.xaml
     /// </summary>
+
     public partial class UserControlPizza : UserControl
     {
+
+        int darab1 = 0;
+        int darab2 = 0;
+        int darab3;
+        public int szamlalo = 0;
+
         public static UserControlPizza Instance;
         public UserControlPizza()
         {
             Instance = this;
             InitializeComponent();
         }
-        int darab1 = 0;
-        int darab2 = 0;
+
+        //Kosárba rakás
         private void pizzab1_Click(object sender, RoutedEventArgs e)
         {
+            
+            szamlalo++;
             darab1++;
-            if (MainWindow.Instance.KosárSzöveg.Text == "Üres")
+            
+            if(darab1>1)
             {
-                MainWindow.Instance.KosárSzöveg.Text = pizza1.Text;
+                darab3 = darab1 - 1;
+                MainWindow.Instance.KosarLista.Items.Remove(pizza1.Text + " * " + darab3);
+                MainWindow.Instance.KosarLista.Items.Add(pizza1.Text + " * " + darab1);
             }
             else
             {
-                MainWindow.Instance.KosárSzöveg.Text = pizza1.Text + "x" + darab1;
+                MainWindow.Instance.KosarLista.Items.Add(pizza1.Text + " * " + darab1);
             }
+            
+            //Számláló
+            MainWindow.Instance.KosarOsszesDarab.Text = szamlalo.ToString();
         }
 
+        //Kosárba rakás
         private void pizzab2_Click(object sender, RoutedEventArgs e)
         {
+
+            szamlalo++;
             darab2++;
-            if (MainWindow.Instance.KosárSzöveg.Text == "Üres")
+
+            if (darab2 > 1)
             {
-                MainWindow.Instance.KosárSzöveg.Text = pizza2.Text;
+                darab3 = darab2 - 1;
+                MainWindow.Instance.KosarLista.Items.Remove(pizza2.Text + " * " + darab3);
+                MainWindow.Instance.KosarLista.Items.Add(pizza2.Text + " * " + darab2);
             }
             else
             {
-                MainWindow.Instance.KosárSzöveg.Text += "\n" + pizza2.Text;
+                MainWindow.Instance.KosarLista.Items.Add(pizza2.Text + " * " + darab2);
             }
+
+            //Számláló
+            MainWindow.Instance.KosarOsszesDarab.Text = szamlalo.ToString();
         }
     }
 }

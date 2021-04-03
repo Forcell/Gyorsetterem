@@ -19,6 +19,7 @@ namespace Etterem
     /// <summary>
     /// Interaction logic for UserControlMenuItem.xaml
     /// </summary>
+
     public partial class UserControlMenuItem : UserControl
     {
         MainWindow _context;
