@@ -8,13 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/amerikana.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("dtbetterem.db")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/dopping.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/hamburgertemp.jpg")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/hotdogtemp.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/logo.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/mctomlek.png")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/mctomlek2.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/tesztatemp.jpg")]
 
 

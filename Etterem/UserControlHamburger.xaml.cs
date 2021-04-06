@@ -10,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Resources;
 using System.Windows.Shapes;
 
 namespace Etterem
@@ -19,9 +20,43 @@ namespace Etterem
     /// </summary>
     public partial class UserControlHamburger : UserControl
     {
+        public static UserControlHamburger Instance;
         public UserControlHamburger()
         {
+            Instance = this;
             InitializeComponent();
+
+            //beolvasás
+
+            List<Termek> hamburger = new List<Termek>();
+
+            hamburger = MainWindow.Instance.adat.getPizza();
+
+            probaHamburger.DataContext = hamburger;
+
+            probaLabel.Content = MainWindow.Instance.adat.getNev();
+
+            //ImageSource im = new BitmapImage(new Uri(MainWindow.Instance.adat.getKep(), UriKind.RelativeOrAbsolute));
+            //geciskep.Source = im;
+
+            ImageBrush brush = new ImageBrush();
+
+            Uri uri = new Uri("Images/" + MainWindow.Instance.adat.getKep() + ".jpg", UriKind.Relative);
+            StreamResourceInfo info = Application.GetResourceStream(uri);
+            BitmapImage image = new BitmapImage();
+            image.BeginInit();
+            image.StreamSource = info.Stream;
+            image.CacheOption = BitmapCacheOption.OnDemand;
+            image.EndInit();
+            probaKep.Stretch = Stretch.UniformToFill;
+            brush.ImageSource = image;
+
+            probaKep.Fill = brush;
+
+
+            //eNEMY_BLOB
+
         }
+
     }
 }

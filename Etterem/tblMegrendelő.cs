@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Etterem
 {
-    class Megrendelő
+    public class Megrendelő
     {
         public int id { get; set; }
         public string nev { get; set; }

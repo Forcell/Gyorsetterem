@@ -23,10 +23,17 @@ namespace Etterem
     public partial class MainWindow : Window
     {
         public static MainWindow Instance;
+
+        public Hozzaferes adat = new Hozzaferes();
+
+
         public MainWindow()
         {
             Instance = this;
             InitializeComponent();
+
+            adat = new Hozzaferes();
+
 
             //Kezdőlap menüpont
             //var Home = new ItemMenu("Kezdőlap", new UserControl(), PackIconKind.Home);

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Etterem
 {
-    class Rendeles
+    public class Rendeles
     {
         public int id { get; set; }
         public int etelid { get; set; }
