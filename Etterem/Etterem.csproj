@@ -9,9 +9,12 @@
   <ItemGroup>
     <None Remove="Images\amerikana.jpg" />
     <None Remove="Images\dopping.jpg" />
+    <None Remove="Images\hamburgertemp.jpg" />
+    <None Remove="Images\hotdogtemp.jpg" />
     <None Remove="Images\Logo.png" />
     <None Remove="Images\McTomlek.png" />
     <None Remove="Images\McTomlek2.png" />
+    <None Remove="Images\tesztatemp.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +24,12 @@
     <Content Include="Images\dopping.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\hamburgertemp.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\hotdogtemp.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\Logo.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -28,6 +37,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\McTomlek2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\tesztatemp.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

@@ -13,10 +13,16 @@
     <Compile Update="UserControlHamburger.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserControlHotdog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControlMenuItem.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UserControlPizza.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlTeszta.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -30,10 +36,16 @@
     <Page Update="UserControlHamburger.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="UserControlHotdog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="UserControlMenuItem.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControlPizza.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlTeszta.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

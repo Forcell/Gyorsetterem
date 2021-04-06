@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\matek\Desktop\Etterem\obj\Debug\net5.0-windows\
+C:\Users\Kristóf\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\
 Etterem
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\matek\Desktop\Etterem\App.xaml
-5-222480515
-5-551397090
-14343970541
-201-1824561804
-Login.xaml;MainWindow.xaml;UserControlHamburger.xaml;UserControlMenuItem.xaml;UserControlPizza.xaml;
+C:\Users\Kristóf\Documents\GitHub\Gyorsetterem\Etterem\App.xaml
+7-1291224811
+8-205584265
+16-123687005
+201-488367367
+Login.xaml;MainWindow.xaml;UserControlHamburger.xaml;UserControlHotdog.xaml;UserControlMenuItem.xaml;UserControlPizza.xaml;UserControlTeszta.xaml;
 
 False
 

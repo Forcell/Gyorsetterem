@@ -5,26 +5,55 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Etterem"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="800" d:DesignWidth="950"
+             FontFamily="Segoe UI Emoji" Background="GhostWhite">
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="150"/>
-            <RowDefinition Height="150"/>
-            <RowDefinition Height="150"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
-        <Border Margin="20 5 20 10" Grid.Column="0" Background="Aqua" HorizontalAlignment="Stretch" Height="100" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="1">
-            
-        </Border>
-        <TextBlock Text="Hamburger - $10.00" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0 0 0 30" Foreground="Black"/>
-        <Button Content="Kosárba" FontSize="10" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="20" Width="80" Margin="0 0 0 8"/>
+        
+        <!--Hamburger #1-->
+        <Image x:Name="Hamburger1" Source="Images/hamburgertemp.jpg" Grid.Column="0" Grid.Row="0" Margin="15" Width="180" Height="150"/>
+        <StackPanel Grid.Column="1" Grid.Row="0" Margin="25">
+            <Label x:Name="h1Nev" Grid.Column="1" VerticalAlignment="Top" Content="Hamburger1" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="h1Ar" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="h1Id" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button x:Name="h1Kosar" Grid.Column="2" Grid.Row="0" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
+        
+        <!--Hamburger #2-->
+        <Image x:Name="Hamburger2" Source="Images/hamburgertemp.jpg" Grid.Column="0" Grid.Row="1" Margin="15" Width="180" Height="150"/>
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="25">
+            <Label x:Name="h2Nev" Grid.Column="1" VerticalAlignment="Top" Content="Hamburger2" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="h2Ar" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="h2Id" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button x:Name="h2Kosar" Grid.Column="2" Grid.Row="1" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
+        
+        <!--Hamburger #3-->
+        <Image x:Name="Hamburger3" Source="Images/hamburgertemp.jpg" Grid.Column="0" Grid.Row="2" Margin="15" Width="180" Height="150"/>
+        <StackPanel Grid.Column="1" Grid.Row="2" Margin="25">
+            <Label x:Name="h3Nev" Grid.Column="1" VerticalAlignment="Top" Content="Hamburger3" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="h3Ar" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="h3Id" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button x:Name="h3Kosar" Grid.Column="2" Grid.Row="2" Margin="30" Content="Kosárba" FontSize="25" Height="60" />
+        
+        <!--Hamburger #4-->
+        <Image x:Name="Hamburger4" Source="Images/hamburgertemp.jpg" Grid.Column="0" Grid.Row="3" Margin="15" Width="180" Height="150"/>
+        <StackPanel Grid.Column="1" Grid.Row="3" Margin="25">
+            <Label x:Name="h4Nev" Grid.Column="1" VerticalAlignment="Top" Content="Hamburger4" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="h4Ar" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="h4Id" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button x:Name="h4Kosar" Grid.Column="2" Grid.Row="3" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
     </Grid>
 </UserControl>

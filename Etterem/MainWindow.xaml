@@ -98,11 +98,17 @@
 
         <!--Megjelenítés-->
         <Grid Grid.Row="1" Grid.Column="1">
-            <ScrollViewer>
-                <StackPanel x:Name="StackPanelMain" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="23*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="127*"/>
+            </Grid.RowDefinitions>
+                <ScrollViewer Grid.RowSpan="2">
+                    <StackPanel x:Name="StackPanelMain" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch">
 
-                </StackPanel>
-            </ScrollViewer>
+                    </StackPanel>
+                </ScrollViewer>
         </Grid>
 
     </Grid>

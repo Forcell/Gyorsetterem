@@ -35,14 +35,14 @@ namespace Etterem
             //Gyorsételek menüpont
             var menuKaja = new List<SubItem>();
             menuKaja.Add(new SubItem("Pizzák", new UserControlPizza()));
-            menuKaja.Add(new SubItem("Hotdogok"));
+            menuKaja.Add(new SubItem("Hotdogok", new UserControlHotdog()));
             menuKaja.Add(new SubItem("Hamburgerek", new UserControlHamburger()));
             var Gyors = new ItemMenu("Gyorsételek", menuKaja, PackIconKind.FastFood);
 
 
             //Egytálételek menüpont
             var menuFoetel = new List<SubItem>();
-            menuFoetel.Add(new SubItem("Tészták"));
+            menuFoetel.Add(new SubItem("Tészták", new UserControlTeszta()));
             menuFoetel.Add(new SubItem("Sülthúsok"));
             menuFoetel.Add(new SubItem("Gyrosok"));
             var Foetel = new ItemMenu("Egytálételek", menuFoetel, PackIconKind.Spaghetti);
