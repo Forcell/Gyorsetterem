@@ -37,11 +37,5 @@ namespace Etterem
         {
             _context.SwitchScreen(((SubItem)((ListView)sender).SelectedItem).Screen);
         }
-
-        private void ListViewItemMenu_Selected(object sender, RoutedEventArgs e)
-        {
-            _context.SwitchScreen(((SubItem)((ListView)sender).SelectedItem).Screen);
-            ExpanderMenu.IsExpanded = false;
-        }
     }
 }

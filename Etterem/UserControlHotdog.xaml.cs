@@ -10,7 +10,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Etterem
@@ -18,24 +17,17 @@ namespace Etterem
     /// <summary>
     /// Interaction logic for UserControlHotdog.xaml
     /// </summary>
+    /// 
+
+
     public partial class UserControlHotdog : UserControl
     {
         public static UserControlHotdog Instance;
-        
+
         public UserControlHotdog()
         {
             Instance = this;
             InitializeComponent();
-            string name="bármi";
-            /* //CODEBREAKER CAUTION!!!!
-            StackPanel sp = new StackPanel();
-            for (int i = 0; i < 5; i++)
-            {
-                UserControlHotdog uc = new UserControlHotdog();
-                uc.Name = $"name + {i}";
-                MainWindow.Instance.StackPanelMain.Children.Add(uc);
-            }
-            */
         }
     }
 }
