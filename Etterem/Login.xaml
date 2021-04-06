@@ -49,7 +49,7 @@
         <Button Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" Content="BEJELENTKEZÉS" Grid.Row="1"/>
         
         <!--Elfelejtett jelszó-->
-        <TextBlock Text="Elfelejtett jelszó?" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="30" Foreground="Gray" Cursor="Hand" Grid.Row="1" ToolTip="Így jártál! xd"/>
+        <TextBlock Text="Elfelejtett jelszó?" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="30" Foreground="Gray" Cursor="Hand" Grid.Row="1" ToolTip="Így jártál! xd &#x0a;Írtad volna fel lol "/>
         
         <!--Kép-->
         <Image Source="Images/McTomlek.png" Width="120" Height="120" VerticalAlignment="Top" Margin="30" Grid.Row="1"/>

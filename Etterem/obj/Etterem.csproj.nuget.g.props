@@ -16,7 +16,12 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)entityframework\6.3.0\buildTransitive\EntityFramework.props" Condition="Exists('$(NuGetPackageRoot)entityframework\6.3.0\buildTransitive\EntityFramework.props')" />
+  </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgEntityFramework Condition=" '$(PkgEntityFramework)' == '' ">C:\Users\matek\.nuget\packages\entityframework\6.3.0</PkgEntityFramework>
+    <PkgSystem_Data_SQLite_EF6 Condition=" '$(PkgSystem_Data_SQLite_EF6)' == '' ">C:\Users\matek\.nuget\packages\system.data.sqlite.ef6\1.0.113</PkgSystem_Data_SQLite_EF6>
     <PkgMaterialDesignThemes Condition=" '$(PkgMaterialDesignThemes)' == '' ">C:\Users\matek\.nuget\packages\materialdesignthemes\4.0.0</PkgMaterialDesignThemes>
   </PropertyGroup>
 </Project>
