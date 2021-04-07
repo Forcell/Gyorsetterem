@@ -74,7 +74,6 @@ namespace Etterem
             var menuItal = new List<SubItem>();
             menuItal.Add(new SubItem("Szénsavas"));
             menuItal.Add(new SubItem("Szénsavmentes"));
-            menuItal.Add(new SubItem("Rostos"));
             menuItal.Add(new SubItem("Szeszes"));
             var Ital = new ItemMenu("Italok", menuItal, PackIconKind.Drink);
 
