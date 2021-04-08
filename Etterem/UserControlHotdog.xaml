@@ -5,8 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Etterem"
              mc:Ignorable="d" 
-             d:DesignHeight="1200" d:DesignWidth="950"
-             FontFamily="Segoe UI Emoji" Background="GhostWhite">
+             d:DesignHeight="1000" d:DesignWidth="950">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"/>
@@ -19,62 +18,52 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!--Hotdog #1-->
         <Image Source="Images/hotdogtemp.jpg" Grid.Column="0" Grid.Row="0" Margin="15" Width="180" Height="150"/>
         <StackPanel Grid.Column="1" Grid.Row="0" Margin="25">
-            <Label Grid.Column="1" VerticalAlignment="Top" Content="Hotdog" FontSize="25" FontWeight="Bold"/>
-            <Label Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
-            <Label Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+            <Label x:Name="HotdogNev1" VerticalAlignment="Top" Content="Hotdog" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HotdogAr1" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HotdogId1" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
         </StackPanel>
         <Button Grid.Column="2" Grid.Row="0" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
 
         <!--Hotdog #2-->
         <Image Source="Images/hotdogtemp.jpg" Grid.Column="0" Grid.Row="1" Margin="15" Width="180" Height="150"/>
         <StackPanel Grid.Column="1" Grid.Row="1" Margin="25">
-            <Label Grid.Column="1" VerticalAlignment="Top" Content="Hotdog" FontSize="25" FontWeight="Bold"/>
-            <Label Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
-            <Label Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+            <Label x:Name="HotdogNev2" Grid.Column="1" VerticalAlignment="Top" Content="Hotdog" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HotdogAr2" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HotdogId2" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
         </StackPanel>
         <Button Grid.Column="2" Grid.Row="1" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
 
         <!--Hotdog #3-->
         <Image Source="Images/hotdogtemp.jpg" Grid.Column="0" Grid.Row="2" Margin="15" Width="180" Height="150"/>
         <StackPanel Grid.Column="1" Grid.Row="2" Margin="25">
-            <Label Grid.Column="1" VerticalAlignment="Top" Content="Hotdog" FontSize="25" FontWeight="Bold"/>
-            <Label Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
-            <Label Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+            <Label x:Name="HotdogNev3" Grid.Column="1" VerticalAlignment="Top" Content="Hotdog" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HotdogAr3" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HotdogId3" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
         </StackPanel>
         <Button Grid.Column="2" Grid.Row="2" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
 
         <!--Hotdog #4-->
         <Image Source="Images/hotdogtemp.jpg" Grid.Column="0" Grid.Row="3" Margin="15" Width="180" Height="150"/>
         <StackPanel Grid.Column="1" Grid.Row="3" Margin="25">
-            <Label Grid.Column="1" VerticalAlignment="Top" Content="Hotdog" FontSize="25" FontWeight="Bold"/>
-            <Label Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
-            <Label Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+            <Label x:Name="HotdogNev4" Grid.Column="1" VerticalAlignment="Top" Content="Hotdog" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HotdogAr4" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HotdogId4" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
         </StackPanel>
         <Button Grid.Column="2" Grid.Row="3" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
 
         <!--Hotdog #5-->
         <Image Source="Images/hotdogtemp.jpg" Grid.Column="0" Grid.Row="4" Margin="15" Width="180" Height="150"/>
         <StackPanel Grid.Column="1" Grid.Row="4" Margin="25">
-            <Label Grid.Column="1" VerticalAlignment="Top" Content="Hotdog" FontSize="25" FontWeight="Bold"/>
-            <Label Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
-            <Label Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+            <Label x:Name="HotdogNev5" Grid.Column="1" VerticalAlignment="Top" Content="Hotdog" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HotdogAr5" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HotdogId5" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
         </StackPanel>
         <Button Grid.Column="2" Grid.Row="4" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
-
-        <!--Hotdog #6-->
-        <Image Source="Images/hotdogtemp.jpg" Grid.Column="0" Grid.Row="5" Margin="15" Width="180" Height="150"/>
-        <StackPanel Grid.Column="1" Grid.Row="5" Margin="25">
-            <Label Grid.Column="1" VerticalAlignment="Top" Content="Hotdog" FontSize="25" FontWeight="Bold"/>
-            <Label Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
-            <Label Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
-        </StackPanel>
-        <Button Grid.Column="2" Grid.Row="5" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
 
     </Grid>
 </UserControl>

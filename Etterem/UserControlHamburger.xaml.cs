@@ -32,7 +32,7 @@ namespace Etterem
 
             hamburger = MainWindow.Instance.adat.getHamburger();
 
-            Hamburger1.DataContext = hamburger;
+            //Hamburger1.DataContext = hamburger;
 
             //1. hamburger
             HamburgerNev1.Content = hamburger[0].nev;
@@ -41,7 +41,7 @@ namespace Etterem
 
             //2. hamburger
 
-            HamburgerNev2.Content= hamburger[1].nev;
+            HamburgerNev2.Content = hamburger[1].nev;
             HamburgerAr2.Content = hamburger[1].ar + " Ft";
             HamburgerId2.Content = "Id: " + hamburger[1].id;
 
@@ -85,6 +85,5 @@ namespace Etterem
             //eNEMY_BLOB
 
         }
-
     }
 }

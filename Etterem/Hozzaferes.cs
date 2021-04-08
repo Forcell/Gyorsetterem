@@ -25,21 +25,23 @@ namespace Etterem
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
             {
-                List<Termek> probahamburger = kapcsolat.Query<Termek>("select * from Termek WHERE altipus='Hamburger'").ToList();
+                List<Termek> hamburger = kapcsolat.Query<Termek>("select * from Termek WHERE altipus='Hamburger'").ToList();
 
-                return probahamburger;
+                return hamburger;
             }
         }
-
-        public string getNev()
+        public List<Termek> getHotdog()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
             {
-                var lbl = kapcsolat.Query<string>("select nev from Termek").ToList();
+                List<Termek> hotdog = kapcsolat.Query<Termek>("select * from Termek WHERE altipus='Hot Dog'").ToList();
 
-                return lbl[0];
+                return hotdog;
             }
         }
+
+
+
         public string getKep()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
