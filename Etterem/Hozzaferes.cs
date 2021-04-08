@@ -21,13 +21,13 @@ namespace Etterem
                 return rendelo;
             }
         }
-        public List<Termek> getPizza()
+        public List<Termek> getHamburger()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
             {
-                var pizza = kapcsolat.Query<Termek>("select * from Termek").ToList();
+                var probahamburger = kapcsolat.Query<Termek>("select * from Termek").ToList();
 
-                return pizza;
+                return probahamburger;
             }
         }
 
@@ -45,9 +45,9 @@ namespace Etterem
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
             {
-                var im = kapcsolat.Query<string>("select nev from Termek").ToList();
+                var kep = kapcsolat.Query<string>("select kep from Termek").ToList();
 
-                return im[0];
+                return kep[0];
             }
         }
     }

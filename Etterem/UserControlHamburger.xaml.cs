@@ -30,15 +30,14 @@ namespace Etterem
 
             List<Termek> hamburger = new List<Termek>();
 
-            hamburger = MainWindow.Instance.adat.getPizza();
+            hamburger = MainWindow.Instance.adat.getHamburger();
 
             probaHamburger.DataContext = hamburger;
 
             probaLabel.Content = MainWindow.Instance.adat.getNev();
 
-            //ImageSource im = new BitmapImage(new Uri(MainWindow.Instance.adat.getKep(), UriKind.RelativeOrAbsolute));
-            //geciskep.Source = im;
 
+            //kép
             ImageBrush brush = new ImageBrush();
 
             Uri uri = new Uri("Images/" + MainWindow.Instance.adat.getKep() + ".jpg", UriKind.Relative);
@@ -48,7 +47,9 @@ namespace Etterem
             image.StreamSource = info.Stream;
             image.CacheOption = BitmapCacheOption.OnDemand;
             image.EndInit();
-            probaKep.Stretch = Stretch.UniformToFill;
+
+            probaKep.Stretch = Stretch.Fill;
+
             brush.ImageSource = image;
 
             probaKep.Fill = brush;
