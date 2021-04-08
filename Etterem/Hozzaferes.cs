@@ -12,7 +12,7 @@ namespace Etterem
     public class Hozzaferes
     {
 
-        public List<Megrendelő> getMegrendelo()
+        public List<Megrendelő> GetMegrendelo()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
             {
@@ -21,7 +21,7 @@ namespace Etterem
                 return rendelo;
             }
         }
-        public List<Termek> getHamburger()
+        public List<Termek> GetHamburger()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
             {
@@ -30,7 +30,7 @@ namespace Etterem
                 return hamburger;
             }
         }
-        public List<Termek> getHotdog()
+        public List<Termek> GetHotdog()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
             {
@@ -39,16 +39,13 @@ namespace Etterem
                 return hotdog;
             }
         }
-
-
-
-        public string getKep()
+        public List<Termek> GetTeszta()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
             {
-                var kep = kapcsolat.Query<string>("select kep from Termek").ToList();
+                List<Termek> teszta = kapcsolat.Query<Termek>("SELECT * FROM Termek WHERE altipus='Tészta'").ToList();
 
-                return kep[0];
+                return teszta;
             }
         }
     }

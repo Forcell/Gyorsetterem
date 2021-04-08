@@ -21,10 +21,9 @@ namespace Etterem
     public partial class UserControlPizza : UserControl
     {
 
-        int darab1 = 0;
-        int darab2 = 0;
-        int darab3;
-        public int szamlalo = 0;
+        public int darab1 = 0;
+        public int darab2 = 0;
+        public int darab3;
 
         public static UserControlPizza Instance;
         public UserControlPizza()
@@ -36,8 +35,7 @@ namespace Etterem
         //Kosárba rakás
         private void pizzab1_Click(object sender, RoutedEventArgs e)
         {
-            
-            szamlalo++;
+            MainWindow.Instance.szamlalo++;
             darab1++;
             
             if(darab1>1)
@@ -52,14 +50,14 @@ namespace Etterem
             }
             
             //Számláló
-            MainWindow.Instance.KosarOsszesDarab.Text = szamlalo.ToString();
+            MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
         }
 
         //Kosárba rakás
         private void pizzab2_Click(object sender, RoutedEventArgs e)
         {
 
-            szamlalo++;
+            MainWindow.Instance.szamlalo++;
             darab2++;
 
             if (darab2 > 1)
@@ -74,7 +72,7 @@ namespace Etterem
             }
 
             //Számláló
-            MainWindow.Instance.KosarOsszesDarab.Text = szamlalo.ToString();
+            MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
         }
     }
 }

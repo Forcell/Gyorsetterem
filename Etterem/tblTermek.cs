@@ -13,6 +13,7 @@ namespace Etterem
         public int ar { get; set; }
         public string tipus { get; set; }
         public string altipus { get; set; }
+        public string kep { get; set; }
 
     }
 }

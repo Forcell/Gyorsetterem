@@ -1258,25 +1258,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kristóf\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\matek\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kristóf\\Documents\\GitHub\\Gyorsetterem\\Etterem\\Etterem.csproj",
+      "projectUniqueName": "C:\\Users\\matek\\Documents\\GitHub\\Gyorsetterem\\Etterem\\Etterem.csproj",
       "projectName": "Etterem",
-      "projectPath": "C:\\Users\\Kristóf\\Documents\\GitHub\\Gyorsetterem\\Etterem\\Etterem.csproj",
-      "packagesPath": "C:\\Users\\Kristóf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kristóf\\Documents\\GitHub\\Gyorsetterem\\Etterem\\obj\\",
+      "projectPath": "C:\\Users\\matek\\Documents\\GitHub\\Gyorsetterem\\Etterem\\Etterem.csproj",
+      "packagesPath": "C:\\Users\\matek\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\matek\\Documents\\GitHub\\Gyorsetterem\\Etterem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kristóf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\matek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

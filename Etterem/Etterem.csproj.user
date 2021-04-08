@@ -12,6 +12,15 @@
     <Compile Update="Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserControlDesszert.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlEgeszseges.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlGyros.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControlHamburger.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +31,18 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UserControlPizza.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlSulthus.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlSzensavas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlSzensavmentes.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControlSzeszes.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="UserControlTeszta.xaml.cs">
@@ -35,6 +56,15 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="UserControlDesszert.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlEgeszseges.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlGyros.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="UserControlHamburger.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -45,6 +75,18 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControlPizza.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlSulthus.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlSzensavas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlSzensavmentes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlSzeszes.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControlTeszta.xaml">

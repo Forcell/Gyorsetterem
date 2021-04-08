@@ -26,6 +26,10 @@ namespace Etterem
 
         public Hozzaferes adat = new Hozzaferes();
 
+        public int szamlalo = 0;
+        public int db1 = 0;
+        public int db2 = 0;
+        public int db3 = 0;
 
         public MainWindow()
         {
@@ -34,6 +38,7 @@ namespace Etterem
 
             adat = new Hozzaferes();
 
+            
 
             //Kezdőlap menüpont
             //var Home = new ItemMenu("Kezdőlap", new UserControl(), PackIconKind.Home);
@@ -129,7 +134,41 @@ namespace Etterem
         {
             MainWindow.Instance.KosarLista.Items.Clear();
             MainWindow.Instance.KosarOsszesDarab.Text = "0";
-            UserControlPizza.Instance.szamlalo = 0;
+            //Pizzák darabszámának nullázása
+            UserControlPizza.Instance.darab1 = 0;
+            UserControlPizza.Instance.darab2 = 0;
+            //Hotdogok darabszámának nullázása
+            UserControlHotdog.Instance.darab1 = 0;
+            UserControlHotdog.Instance.darab2 = 0;
+            UserControlHotdog.Instance.darab3 = 0;
+            UserControlHotdog.Instance.darab4 = 0;
+            UserControlHotdog.Instance.darab5 = 0;
+            //Hamburgerek darabszámának nullázása
+            UserControlHamburger.Instance.darab1 = 0;
+            UserControlHamburger.Instance.darab2 = 0;
+            UserControlHamburger.Instance.darab3 = 0;
+            UserControlHamburger.Instance.darab4 = 0;
+            UserControlHamburger.Instance.darab5 = 0;
+            //Tészták darabszámának nullázása
+            UserControlTeszta.Instance.darab1 = 0;
+            UserControlTeszta.Instance.darab2 = 0;
+            UserControlTeszta.Instance.darab3 = 0;
+            UserControlTeszta.Instance.darab4 = 0;
+            UserControlTeszta.Instance.darab5 = 0;
+            //Sülthúsok darabszámának nullázása
+            //Gyrosok darabszámának nullázása
+            //Egészségs ételek darabszámának nullázása
+            //Desszertek darabszámának nullázása
+            //Szénsavas italok darabszámának nullázása
+            //Szénsavmentes italok darabszámának nullázása
+            //Alkoholos italok darabszámának nullázása
+            szamlalo = 0;
+
+        }
+
+        private void Fizetes_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

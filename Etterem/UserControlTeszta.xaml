@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Etterem"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="950"
+             d:DesignHeight="1000" d:DesignWidth="950"
              FontFamily="Segoe UI Emoji" Background="GhostWhite">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -17,33 +17,54 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <!--Tészta #1-->
-        <Image x:Name="Teszta1" Source="Images/tesztatemp.jpg" Grid.Column="0" Grid.Row="0" Margin="15" Width="180" Height="150"/>
+        <Rectangle x:Name="TesztaKep1" Grid.Column="0" Grid.Row="0" Margin="36,30,36,30"/>
         <StackPanel Grid.Column="1" Grid.Row="0" Margin="25">
-            <Label x:Name="t1Nev" Grid.Column="1" VerticalAlignment="Top" Content="Tészta1" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="t1Ar" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="t1Id" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+            <Label x:Name="TesztaNev1" VerticalAlignment="Top" Content="Tészta" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="TesztaAr1" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="TesztaId1" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
         </StackPanel>
-        <Button x:Name="t1Kosar" Grid.Column="2" Grid.Row="0" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
+        <Button Grid.Column="2" Grid.Row="0" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Teszta1_Click"/>
 
         <!--Tészta #2-->
-        <Image x:Name="Teszta2" Source="Images/tesztatemp.jpg" Grid.Column="0" Grid.Row="1" Margin="15" Width="180" Height="150"/>
+        <Rectangle x:Name="TesztaKep2" Grid.Column="0" Grid.Row="1" Margin="36,30,36,30"/>
         <StackPanel Grid.Column="1" Grid.Row="1" Margin="25">
-            <Label x:Name="t2Nev" Grid.Column="1" VerticalAlignment="Top" Content="Tészta2" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="t2Ar" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="t2Id" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+            <Label x:Name="TesztaNev2" VerticalAlignment="Top" Content="Tészta" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="TesztaAr2" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="TesztaId2" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
         </StackPanel>
-        <Button x:Name="t2Kosar" Grid.Column="2" Grid.Row="1" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
+        <Button Grid.Column="2" Grid.Row="1" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Teszta2_Click"/>
 
         <!--Tészta #3-->
-        <Image x:Name="Teszta3" Source="Images/tesztatemp.jpg" Grid.Column="0" Grid.Row="2" Margin="15" Width="180" Height="150"/>
+        <Rectangle x:Name="TesztaKep3" Grid.Column="0" Grid.Row="2" Margin="36,30,36,30"/>
         <StackPanel Grid.Column="1" Grid.Row="2" Margin="25">
-            <Label x:Name="t3Nev" Grid.Column="1" VerticalAlignment="Top" Content="Tészta3" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="t3Ar" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="t3Id" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+            <Label x:Name="TesztaNev3" VerticalAlignment="Top" Content="Tészta" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="TesztaAr3" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="TesztaId3" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
         </StackPanel>
-        <Button x:Name="t3Kosar" Grid.Column="2" Grid.Row="2" Margin="30" Content="Kosárba" FontSize="25" Height="60" />
+        <Button Grid.Column="2" Grid.Row="2" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Teszta3_Click"/>
+
+        <!--Tészta #4-->
+        <Rectangle x:Name="TesztaKep4" Grid.Column="0" Grid.Row="3" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="3" Margin="25">
+            <Label x:Name="TesztaNev4" VerticalAlignment="Top" Content="Tészta" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="TesztaAr4" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="TesztaId4" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="3" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Teszta4_Click"/>
+
+        <!--Tészta #5-->
+        <Rectangle x:Name="TesztaKep5" Grid.Column="0" Grid.Row="4" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="4" Margin="25">
+            <Label x:Name="TesztaNev5" VerticalAlignment="Top" Content="Tészta" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="TesztaAr5" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="TesztaId5" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="4" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Teszta5_Click"/>
+
     </Grid>
 </UserControl>

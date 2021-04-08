@@ -47,7 +47,7 @@
                             <!--Ürítés-->
                             <Button Name="Urites" Content="Ürítés" Click="Urites_Click" HorizontalContentAlignment="Center"/>
                             <!--Fizetés-->
-                            <Button Name="Fizetes" Content="Fizetés" HorizontalContentAlignment="Center"/>
+                            <Button Name="Fizetes" Content="Fizetés" HorizontalContentAlignment="Center" Click="Fizetes_Click"/>
                         </StackPanel>
                     </materialDesign:PopupBox>
                     <TextBlock VerticalAlignment="Center" Foreground="White" FontSize="18" x:Name="KosarOsszesDarab" Text="0" MouseUp="KosarDarab"/>

@@ -8,18 +8,239 @@
 
   <ItemGroup>
     <None Remove="dtbEtterem.db" />
+    <None Remove="Images\1kggyros.jpg" />
+    <None Remove="Images\7up.jpg" />
+    <None Remove="Images\almale.jpg" />
     <None Remove="Images\amerikana.jpg" />
+    <None Remove="Images\bacon.jpg" />
+    <None Remove="Images\bajor.jpg" />
+    <None Remove="Images\baklava.jpg" />
+    <None Remove="Images\bbq.jpg" />
+    <None Remove="Images\bigking.jpg" />
+    <None Remove="Images\bolognai.jpg" />
+    <None Remove="Images\bolognaiteszta.jpg" />
+    <None Remove="Images\bomba.jpg" />
+    <None Remove="Images\bor.jpg" />
+    <None Remove="Images\canada.jpg" />
+    <None Remove="Images\carbonara.jpg" />
+    <None Remove="Images\carbonarateszta.jpg" />
+    <None Remove="Images\chicago.jpg" />
+    <None Remove="Images\chilli.jpg" />
+    <None Remove="Images\chillicheese.jpg" />
+    <None Remove="Images\cigany.jpg" />
+    <None Remove="Images\cordon.jpg" />
+    <None Remove="Images\csirkegyros.jpg" />
+    <None Remove="Images\csirkehusos.jpg" />
+    <None Remove="Images\csirkemellroston.jpg" />
     <None Remove="Images\dopping.jpg" />
+    <None Remove="Images\gladiator.jpg" />
+    <None Remove="Images\goroggyros.jpg" />
+    <None Remove="Images\gyrostortilla.jpg" />
+    <None Remove="Images\hamburgertemp.jpg" />
+    <None Remove="Images\hawaiisalata.jpg" />
+    <None Remove="Images\hotdogtemp.jpg" />
+    <None Remove="Images\kurtoskalacs.jpg" />
+    <None Remove="Images\latino.jpg" />
     <None Remove="Images\Logo.png" />
+    <None Remove="Images\magyaros.jpg" />
+    <None Remove="Images\magyaroshotdog.jpg" />
+    <None Remove="Images\marlenka.jpg" />
     <None Remove="Images\McTomlek.png" />
     <None Remove="Images\McTomlek2.png" />
+    <None Remove="Images\mexikoiteszta.jpg" />
+    <None Remove="Images\milanoiteszta.jpg" />
+    <None Remove="Images\mirinda.jpg" />
+    <None Remove="Images\narancsle.jpg" />
+    <None Remove="Images\newyork.jpg" />
+    <None Remove="Images\nutellasgomboc.jpg" />
+    <None Remove="Images\palinka.jpg" />
+    <None Remove="Images\pepsi.jpg" />
+    <None Remove="Images\pezsgo.jpg" />
+    <None Remove="Images\rantottcsirkemell.jpg" />
+    <None Remove="Images\sajtburger.jpg" />
+    <None Remove="Images\sonka_kukorica.jpg" />
+    <None Remove="Images\sor.jpg" />
+    <None Remove="Images\szalami.jpg" />
+    <None Remove="Images\tarja.jpg" />
+    <None Remove="Images\tavaszi.jpg" />
+    <None Remove="Images\tesztatemp.jpg" />
+    <None Remove="Images\tiramisu.jpg" />
+    <None Remove="Images\tofu.jpg" />
+    <None Remove="Images\topjoy.jpg" />
+    <None Remove="Images\viz.jpg" />
+    <None Remove="Images\whopper.jpg" />
+    <None Remove="Images\zoldsegespizza.jpg" />
+    <None Remove="Images\zoldsegesspagetti.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="dtbEtterem.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\1kggyros.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\7up.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\almale.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\amerikana.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bacon.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bajor.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\baklava.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bbq.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bigking.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bolognai.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bolognaiteszta.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bomba.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\bor.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\canada.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\carbonara.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\carbonarateszta.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\chicago.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\chilli.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\cigany.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\cordon.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\csirkegyros.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\csirkehusos.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\csirkemellroston.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\gladiator.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\goroggyros.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\gyrostortilla.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\hamburgertemp.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\hawaiisalata.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\hotdogtemp.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\kurtoskalacs.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\latino.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\magyaros.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\magyaroshotdog.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\marlenka.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\mexikoiteszta.jpg" />
+    <Resource Include="Images\milanoiteszta.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\mirinda.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\narancsle.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\newyork.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\nutellasgomboc.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\palinka.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\pepsi.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\pezsgo.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\rantottcsirkemell.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\sajtburger.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\sonka_kukorica.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\sor.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\szalami.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\tarja.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\tavaszi.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\tesztatemp.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\tiramisu.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\tofu.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\topjoy.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\viz.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\whopper.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Content Include="Images\dopping.jpg">
@@ -34,6 +255,12 @@
     <Content Include="Images\McTomlek2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="Images\zoldsegespizza.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\zoldsegesspagetti.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
