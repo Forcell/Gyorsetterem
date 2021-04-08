@@ -25,7 +25,7 @@ namespace Etterem
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
             {
-                var probahamburger = kapcsolat.Query<Termek>("select * from Termek").ToList();
+                List<Termek> probahamburger = kapcsolat.Query<Termek>("select * from Termek WHERE altipus='Hamburger'").ToList();
 
                 return probahamburger;
             }
@@ -40,7 +40,6 @@ namespace Etterem
                 return lbl[0];
             }
         }
-
         public string getKep()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))

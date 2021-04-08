@@ -34,7 +34,9 @@ namespace Etterem
 
             probaHamburger.DataContext = hamburger;
 
-            probaLabel.Content = MainWindow.Instance.adat.getNev();
+            probaLabel.Content = hamburger[0].nev;
+            probaAr.Content = hamburger[0].ar + " Ft";
+            probaId.Content = "Id: " + hamburger[0].id;
 
 
             //kép
