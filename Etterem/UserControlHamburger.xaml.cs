@@ -26,7 +26,7 @@ namespace Etterem
             Instance = this;
             InitializeComponent();
 
-            //beolvasás
+            //beolvasás adatbázisból
 
             List<Termek> hamburger = new List<Termek>();
 
@@ -34,9 +34,26 @@ namespace Etterem
 
             probaHamburger.DataContext = hamburger;
 
+            //1. hamburger
             probaLabel.Content = hamburger[0].nev;
             probaAr.Content = hamburger[0].ar + " Ft";
             probaId.Content = "Id: " + hamburger[0].id;
+
+            //2. hamburger
+
+            Hamburger2.Content= hamburger[1].nev;
+
+
+            //3. hamburger
+            //4. hamburger
+            //5. hamburger
+
+
+
+
+
+
+
 
 
             //kép
