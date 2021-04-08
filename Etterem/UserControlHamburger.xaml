@@ -22,10 +22,10 @@
         </Grid.RowDefinitions>
 
 
-        <StackPanel x:Name="probaHamburger" Grid.Column="1" Grid.Row="0" Margin="25">
-            <Label x:Name="probaLabel" Grid.Column="1" VerticalAlignment="Top" Content="" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="probaAr" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="probaId" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        <StackPanel x:Name="Hamburger1" Grid.Column="1" Grid.Row="0" Margin="25">
+            <Label x:Name="HamburgerNev1" Grid.Column="1" VerticalAlignment="Top" Content="" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HamburgerAr1" Grid.Column="1" Content="" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HamburgerId1" Grid.Column="1" Content="" FontSize="25" Foreground="LightGray"/>
         </StackPanel>
         <Rectangle Grid.Column="0" Grid.Row="0" x:Name="probaKep" Margin="36,25,36,25"/>
         <Button Grid.Column="2" Grid.Row="0" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
@@ -33,36 +33,36 @@
 
         <StackPanel x:Name="Hamburger2" Grid.Column="1" Grid.Row="1" Margin="25">
             <Label x:Name="HamburgerNev2" Grid.Column="1" VerticalAlignment="Top" Content="" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="HamburgerAr2" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="HamburgerId2" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+            <Label x:Name="HamburgerAr2" Grid.Column="1" Content="" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HamburgerId2" Grid.Column="1" Content="" FontSize="25" Foreground="LightGray"/>
         </StackPanel>
         <Rectangle x:Name="HamburgerKep2" Margin="36,25,36,25"/>
-        <Button Grid.Column="2" Grid.Row="0" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
+        <Button Grid.Column="2" Grid.Row="1" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
 
 
-        <StackPanel x:Name="Hamburger3" Grid.Column="1" Grid.Row="1" Margin="25">
+        <StackPanel x:Name="Hamburger3" Grid.Column="1" Grid.Row="2" Margin="25">
             <Label x:Name="HamburgerNev3" Grid.Column="1" VerticalAlignment="Top" Content="" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="HamburgerAr3" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="HamburgerId3" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+            <Label x:Name="HamburgerAr3" Grid.Column="1" Content="" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HamburgerId3" Grid.Column="1" Content="" FontSize="25" Foreground="LightGray"/>
         </StackPanel>
         <Rectangle x:Name="HamburgerKep3" Margin="36,25,36,25"/>
-        <Button Grid.Column="2" Grid.Row="0" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
+        <Button Grid.Column="2" Grid.Row="2" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
 
-        <StackPanel x:Name="Hamburger4" Grid.Column="1" Grid.Row="1" Margin="25">
+        <StackPanel x:Name="Hamburger4" Grid.Column="1" Grid.Row="3" Margin="25">
             <Label x:Name="HamburgerNev4" Grid.Column="1" VerticalAlignment="Top" Content="" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="HamburgerAr4" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="HamburgerId4" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+            <Label x:Name="HamburgerAr4" Grid.Column="1" Content="" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HamburgerId4" Grid.Column="1" Content="" FontSize="25" Foreground="LightGray"/>
         </StackPanel>
         <Rectangle x:Name="HamburgerKep4" Margin="36,25,36,25"/>
-        <Button Grid.Column="2" Grid.Row="0" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
+        <Button Grid.Column="2" Grid.Row="3" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
 
-        <StackPanel x:Name="Hamburger5" Grid.Column="1" Grid.Row="1" Margin="25">
+        <StackPanel x:Name="Hamburger5" Grid.Column="1" Grid.Row="4" Margin="25">
             <Label x:Name="HamburgerNev5" Grid.Column="1" VerticalAlignment="Top" Content="" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="HamburgerAr5" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
-            <Label x:Name="HamburgerId5" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+            <Label x:Name="HamburgerAr5" Grid.Column="1" Content="" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="HamburgerId5" Grid.Column="1" Content="" FontSize="25" Foreground="LightGray"/>
         </StackPanel>
         <Rectangle x:Name="HamburgerKep5" Margin="36,25,36,25"/>
-        <Button Grid.Column="2" Grid.Row="0" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
+        <Button Grid.Column="2" Grid.Row="4" Margin="30" Content="Kosárba" FontSize="25" Height="60"/>
 
 
     </Grid>

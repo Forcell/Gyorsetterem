@@ -32,28 +32,36 @@ namespace Etterem
 
             hamburger = MainWindow.Instance.adat.getHamburger();
 
-            probaHamburger.DataContext = hamburger;
+            Hamburger1.DataContext = hamburger;
 
             //1. hamburger
-            probaLabel.Content = hamburger[0].nev;
-            probaAr.Content = hamburger[0].ar + " Ft";
-            probaId.Content = "Id: " + hamburger[0].id;
+            HamburgerNev1.Content = hamburger[0].nev;
+            HamburgerAr1.Content = hamburger[0].ar + " Ft";
+            HamburgerId1.Content = "Id: " + hamburger[0].id;
 
             //2. hamburger
 
-            Hamburger2.Content= hamburger[1].nev;
-
+            HamburgerNev2.Content= hamburger[1].nev;
+            HamburgerAr2.Content = hamburger[1].ar + " Ft";
+            HamburgerId2.Content = "Id: " + hamburger[1].id;
 
             //3. hamburger
+
+            HamburgerNev3.Content = hamburger[2].nev;
+            HamburgerAr3.Content = hamburger[2].ar + " Ft";
+            HamburgerId3.Content = "Id: " + hamburger[2].id;
+
             //4. hamburger
+
+            HamburgerNev4.Content = hamburger[3].nev;
+            HamburgerAr4.Content = hamburger[3].ar + " Ft";
+            HamburgerId4.Content = "Id: " + hamburger[3].id;
+
             //5. hamburger
 
-
-
-
-
-
-
+            HamburgerNev5.Content = hamburger[4].nev;
+            HamburgerAr5.Content = hamburger[4].ar + " Ft";
+            HamburgerId5.Content = "Id: " + hamburger[4].id;
 
 
             //kép

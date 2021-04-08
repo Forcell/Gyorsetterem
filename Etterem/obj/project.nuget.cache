@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5RiDG51/qzBNfiP7M/P6r+dwJAxhsnx9voSeWhxFP+lOq9d7yzF/URljby1fyXHFirpuCatcTcQ96Ciq1BWNpA==",
+  "dgSpecHash": "AviDw6qa8m+pdF94QWPENi1fe73ejOmb2qI6PumNe/PAXRlhM2zIL4e+Fyexy7yH9eB98ArVTv5N0Bo0RnRXFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matek\\Documents\\GitHub\\Gyorsetterem\\Etterem\\Etterem.csproj",
+  "projectFilePath": "C:\\Users\\matek\\Desktop\\Etterem\\Etterem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matek\\.nuget\\packages\\dapper\\2.0.78\\dapper.2.0.78.nupkg.sha512",
     "C:\\Users\\matek\\.nuget\\packages\\entityframework\\6.3.0\\entityframework.6.3.0.nupkg.sha512",
