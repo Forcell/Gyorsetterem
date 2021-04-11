@@ -83,8 +83,8 @@
 
 
             <!--Logó-->
-            <Grid Grid.Row="0" Background="White" Grid.ColumnSpan="2">
-                <Image Source="Images/McTomlek2.png"/>
+            <Grid x:Name="LogoRow" Grid.Row="0" Background="White" Grid.ColumnSpan="2" MouseDown="LogoRow_MouseDown">
+                <Image x:Name="HomeLogo" Source="Images/McTomlek2.png"/>
             </Grid>
 
 

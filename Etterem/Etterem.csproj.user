@@ -24,6 +24,9 @@
     <Compile Update="UserControlHamburger.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserControlHome.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserControlHotdog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -66,6 +69,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControlHamburger.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlHome.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControlHotdog.xaml">

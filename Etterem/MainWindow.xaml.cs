@@ -35,6 +35,7 @@ namespace Etterem
         {
             Instance = this;
             InitializeComponent();
+            SwitchScreen(new UserControlHome());
 
             adat = new Hozzaferes();
 
@@ -169,6 +170,11 @@ namespace Etterem
         private void Fizetes_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void LogoRow_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            SwitchScreen(new UserControlHome());
         }
     }
 }
