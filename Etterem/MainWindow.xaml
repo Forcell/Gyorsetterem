@@ -98,7 +98,7 @@
 
         <!--Megjelenítés-->
         <Grid Grid.Row="1" Grid.Column="1">
-            <ScrollViewer>
+            <ScrollViewer HorizontalAlignment="Center" Width="950" Height="538" VerticalAlignment="Top" VerticalScrollBarVisibility="Hidden">
                 <StackPanel x:Name="StackPanelMain" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch">
 
                 </StackPanel>

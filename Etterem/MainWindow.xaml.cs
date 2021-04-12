@@ -27,9 +27,8 @@ namespace Etterem
         public Hozzaferes adat = new Hozzaferes();
 
         public int szamlalo = 0;
-        public int db1 = 0;
-        public int db2 = 0;
-        public int db3 = 0;
+
+        public List<KosarTermek> Kosar = new List<KosarTermek>();
 
         public MainWindow()
         {
@@ -169,7 +168,7 @@ namespace Etterem
 
         private void Fizetes_Click(object sender, RoutedEventArgs e)
         {
-
+            SwitchScreen(new UserControlFizetes());
         }
 
         private void LogoRow_MouseDown(object sender, MouseButtonEventArgs e)

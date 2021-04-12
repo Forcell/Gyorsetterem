@@ -288,3 +288,5 @@ C:\Users\Kristóf\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows
 C:\Users\Kristóf\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlSzeszes.baml
 C:\Users\Kristóf\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlHome.g.cs
 C:\Users\Kristóf\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlHome.baml
+C:\Users\Kristóf\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlFizetes.g.cs
+C:\Users\Kristóf\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlFizetes.baml

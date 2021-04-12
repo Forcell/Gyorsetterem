@@ -28,6 +28,8 @@ namespace Etterem
         public int darab4 = 0;
         public int darab5 = 0;
         public int darab6 = 0;
+        public List<Termek> hamburger = new List<Termek>();
+
 
         public UserControlHamburger()
         {
@@ -36,7 +38,6 @@ namespace Etterem
 
             //beolvasás adatbázisból
 
-            List<Termek> hamburger = new List<Termek>();
 
             hamburger = MainWindow.Instance.adat.GetHamburger();
 
@@ -150,8 +151,28 @@ namespace Etterem
             {
                 MainWindow.Instance.KosarLista.Items.Add(HamburgerNev1.Content + " * " + darab1);
              }
-                //Számláló
-                MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString(); 
+            //Számláló
+            MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+            int rendeltdb = 0;
+            for(int i=0; i<MainWindow.Instance.Kosar.Count();i++)
+            {
+                if(MainWindow.Instance.Kosar[i].id==hamburger[0].id)
+                {
+                    MainWindow.Instance.Kosar[i].db++;
+                    break;
+                }
+                else
+                {
+                    KosarTermek k = new KosarTermek();
+                    k.ar = hamburger[0].ar;
+                    k.nev = hamburger[0].nev;
+                    k.tipus = hamburger[0].tipus;
+                    k.altipus = hamburger[0].altipus;
+                    k.db = rendeltdb;
+                    MainWindow.Instance.Kosar.Add(k);
+                }
+            }
+            
         }
 
         private void Hamburger2_Click(object sender, RoutedEventArgs e)
