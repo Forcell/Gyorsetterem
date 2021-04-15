@@ -3,66 +3,100 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Etterem" 
-             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:Etterem"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800"
-             FontFamily="Segoe UI Emoji" >
+             d:DesignHeight="1600" d:DesignWidth="950"
+             FontFamily="Segoe UI Emoji" Background="GhostWhite">
     <Grid>
-        
-        <!--Elrendezés-->
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="225"/>
-            <RowDefinition Height="225"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        
-        <!--1.pizza-->
-        <!--Kép-->
-        <Border Margin="20,5,20,0" Grid.Column="0" Height="150" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="1">
-            <Image Source="Images/dopping.jpg" Stretch="UniformToFill"/>
-        </Border>
+        <!--Pizza #1-->
+        <Rectangle x:Name="PizzaKep1" Grid.Column="0" Grid.Row="0" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="0" Margin="25">
+            <Label x:Name="PizzaNev1" VerticalAlignment="Top" Content="Pizza" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaAr1" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaId1" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="0" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Pizza1_Click"/>
 
-        <!--Figyelmeztetés-->
-        <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" HorizontalAlignment="Right" StaysOpen="False" Margin="0,5,24,194">
-            <materialDesign:PopupBox.ToggleContent >
-                <materialDesign:PackIcon Kind="Warning" />
-            </materialDesign:PopupBox.ToggleContent >
-            <StackPanel Width="auto">
-                <materialDesign:PackIcon Kind="Gluten" HorizontalAlignment="Right" ToolTip="Glutén"/>
-            </StackPanel>
-        </materialDesign:PopupBox>
+        <!--Pizza #2-->
+        <Rectangle x:Name="PizzaKep2" Grid.Column="0" Grid.Row="1" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="25">
+            <Label x:Name="PizzaNev2" VerticalAlignment="Top" Content="Pizza" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaAr2" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaId2" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="1" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Pizza2_Click"/>
 
-        <!--Pizza neve, ára, kosárba gomb-->
-        <TextBlock x:Name="pizza1" Text="Pizza - $25.00" VerticalAlignment="Top" Grid.Column="0" HorizontalAlignment="Center" Margin="0,167,0,0" Foreground="Black"/>
-        <Button x:Name="pizzab1" Content="Kosárba" FontSize="10" VerticalAlignment="Top" Grid.Column="0" HorizontalAlignment="Center" Height="20" Width="80" Margin="0,195,0,0" Click="pizzab1_Click"/>
+        <!--Pizza #3-->
+        <Rectangle x:Name="PizzaKep3" Grid.Column="0" Grid.Row="2" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="2" Margin="25">
+            <Label x:Name="PizzaNev3" VerticalAlignment="Top" Content="Pizza" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaAr3" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaId3" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="2" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Pizza3_Click"/>
 
-  
-        <!--2.pizza-->
-        <Border Margin="20,5,20,0" Grid.Column="1" Height="150" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="1">
-            <Image Source="Images/amerikana.jpg" Stretch="UniformToFill"/>
-        </Border>
+        <!--Pizza #4-->
+        <Rectangle x:Name="PizzaKep4" Grid.Column="0" Grid.Row="3" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="3" Margin="25">
+            <Label x:Name="PizzaNev4" VerticalAlignment="Top" Content="Pizza" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaAr4" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaId4" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="3" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Pizza4_Click"/>
 
-        <!--Figyelmeztetés-->
-        <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" HorizontalAlignment="Right" Grid.Column="1" StaysOpen="False" Margin="0,5,24,194">
-            <materialDesign:PopupBox.ToggleContent>
-                <materialDesign:PackIcon Kind="Warning"/>
-            </materialDesign:PopupBox.ToggleContent>
-            <StackPanel Width="auto">
-                <materialDesign:PackIcon Kind="Gluten" ToolTip="Glutén"/>
-                <materialDesign:PackIcon Kind="Cow" ToolTip="Tej"/>
-            </StackPanel>
-        </materialDesign:PopupBox>
+        <!--Pizza #5-->
+        <Rectangle x:Name="PizzaKep5" Grid.Column="0" Grid.Row="4" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="4" Margin="25">
+            <Label x:Name="PizzaNev5" VerticalAlignment="Top" Content="Pizza" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaAr5" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaId5" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="4" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Pizza5_Click"/>
 
-        <!--Pizza neve, ára, kosárba gomb-->
-        <TextBlock x:Name="pizza2" Text="Másik Pizza - $25.00" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Center" Margin="0,167,0,0" Foreground="Black"/>
-        <Button x:Name="pizzab2" Content="Kosárba" FontSize="10" VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Center" Height="20" Width="80" Margin="0,195,0,0" Click="pizzab2_Click"/>
+        <!--Pizza #6-->
+        <Rectangle x:Name="PizzaKep6" Grid.Column="0" Grid.Row="5"  Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="5" Margin="25">
+            <Label x:Name="PizzaNev6" VerticalAlignment="Top" Content="Pizza" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaAr6" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaId6" Grid.Column="1" Content="Id: 265662596" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="5" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Pizza6_Click"/>
 
+
+        <!--Pizza #7-->
+        <Rectangle x:Name="PizzaKep7" Grid.Column="0" Grid.Row="6"  Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="6" Margin="25">
+            <Label x:Name="PizzaNev7" VerticalAlignment="Top" Content="Pizza" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaAr7" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaId7" Grid.Column="1" Content="Id: 266762696" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="6" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Pizza7_Click"/>
+
+
+        <!--Pizza #8-->
+        <Rectangle x:Name="PizzaKep8" Grid.Column="0" Grid.Row="7"  Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="7" Margin="25">
+            <Label x:Name="PizzaNev8" VerticalAlignment="Top" Content="Pizza" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaAr8" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="PizzaId8" Grid.Column="1" Content="Id: 267862796" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="7" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Pizza8_Click"/>
 
     </Grid>
 </UserControl>

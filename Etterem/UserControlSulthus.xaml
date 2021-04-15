@@ -1,12 +1,70 @@
-﻿<Window x:Class="Etterem.UserControlSulthus"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Etterem"
-        mc:Ignorable="d"
-        Title="UserControlSulthus" Height="450" Width="800">
+﻿<UserControl x:Class="Etterem.UserControlSulthus"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Etterem"
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="950"
+             FontFamily="Segoe UI Emoji" Background="GhostWhite">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Sülthüs #1-->
+        <Rectangle x:Name="SulthusKep1" Grid.Column="0" Grid.Row="0" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="0" Margin="25">
+            <Label x:Name="SulthusNev1" VerticalAlignment="Top" Content="Sülthüs" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SulthusAr1" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SulthusId1" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="0" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Sulthus1_Click"/>
+
+        <!--Sülthüs #2-->
+        <Rectangle x:Name="SulthusKep2" Grid.Column="0" Grid.Row="1" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="25">
+            <Label x:Name="SulthusNev2" VerticalAlignment="Top" Content="Sülthüs" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SulthusAr2" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SulthusId2" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="1" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Sulthus2_Click"/>
+
+        <!--Sülthüs #3-->
+        <Rectangle x:Name="SulthusKep3" Grid.Column="0" Grid.Row="2" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="2" Margin="25">
+            <Label x:Name="SulthusNev3" VerticalAlignment="Top" Content="Sülthüs" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SulthusAr3" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SulthusId3" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="2" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Sulthus3_Click"/>
+
+        <!--Sülthüs #4-->
+        <Rectangle x:Name="SulthusKep4" Grid.Column="0" Grid.Row="3" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="3" Margin="25">
+            <Label x:Name="SulthusNev4" VerticalAlignment="Top" Content="Sülthüs" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SulthusAr4" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SulthusId4" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="3" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Sulthus4_Click"/>
+
+        <!--Sülthüs #5-->
+        <Rectangle x:Name="SulthusKep5" Grid.Column="0" Grid.Row="4" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="4" Margin="25">
+            <Label x:Name="SulthusNev5" VerticalAlignment="Top" Content="Sülthüs" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SulthusAr5" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SulthusId5" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="4" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Sulthus5_Click"/>
+
     </Grid>
-</Window>
+</UserControl>

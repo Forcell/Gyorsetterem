@@ -262,14 +262,12 @@ C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\Us
 C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlSulthus.g.cs
 C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlSzensavas.g.cs
 C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlSzensavmentes.g.cs
-C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlSzeszes.g.cs
 C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlDesszert.baml
 C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlEgeszseges.baml
 C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlGyros.baml
 C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlSulthus.baml
 C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlSzensavas.baml
 C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlSzensavmentes.baml
-C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlSzeszes.baml
 C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\bin\Debug\net5.0-windows\Images\McTomlek.png
 C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\bin\Debug\net5.0-windows\Images\dopping.jpg
 C:\Users\Kristóf\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlDesszert.g.cs
@@ -298,3 +296,5 @@ C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\Us
 C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlFizetes.baml
 C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlHome.baml
 C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlThankYou.baml
+C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlAlkoholos.g.cs
+C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlAlkoholos.baml

@@ -133,7 +133,7 @@ namespace Etterem
             HamburgerKep5.Fill = brush5;
 
 
-            //ENEMY_BLOB
+            //[enemy_blob]
 
         }
 

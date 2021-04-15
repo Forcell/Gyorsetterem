@@ -41,7 +41,7 @@
                             <!--Kosár ikon-->
                             <materialDesign:PackIcon Kind="Cart" Foreground="White" Width="25" Height="25" VerticalAlignment="Center" Margin="5" MouseUp="PackIcon_MouseUp"/>
                         </materialDesign:PopupBox.ToggleContent>
-                        <StackPanel Width="150">
+                        <StackPanel Width="200">
                             <ListBox x:Name="KosarLista">
                             </ListBox>
                             <!--Ürítés-->

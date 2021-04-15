@@ -14,7 +14,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <materialDesign:ColorZone Mode="PrimaryMid" Height="450">
-            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" TextAlignment="Center" FontSize="80" Text="Köszönjük a Vásárálást!" Foreground="White" FontFamily="Bahnschrift Condensed" Height="93" Width="882" Margin="0,177,0,0"/>
+            <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" TextAlignment="Center" FontSize="80" Text="Köszönjük a Vásárlást!" Foreground="White" FontFamily="Bahnschrift Condensed" Height="93" Width="882" Margin="0,177,0,0"/>
         </materialDesign:ColorZone>
         <materialDesign:ColorZone Mode="PrimaryMid" Grid.Row="1" Height="100">
             <Button x:Name="btVissza" Grid.Row="1" Style="{DynamicResource MaterialDesignFlatButton}" Content="Vissza" Foreground="White" FontFamily="Bahnschrift Condensed" Height="80" Width="200" FontSize="40" Click="btVissza_Click"/>

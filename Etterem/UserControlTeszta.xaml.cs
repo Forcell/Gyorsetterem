@@ -28,18 +28,18 @@ namespace Etterem
         public int darab4 = 0;
         public int darab5 = 0;
         public int darab6 = 0;
+        public List<Termek> teszta = new List<Termek>();
 
         public UserControlTeszta()
         {
             Instance = this;
             InitializeComponent();
+
             //beolvasás adatbázisból
-
-            List<Termek> teszta = new List<Termek>();
-
             teszta = MainWindow.Instance.adat.GetTeszta();
 
-            //1. hotdog
+            //1. teszta
+
             TesztaNev1.Content = teszta[0].nev;
             TesztaAr1.Content = teszta[0].ar + " Ft";
             TesztaId1.Content = "Id: " + teszta[0].id;
@@ -56,7 +56,7 @@ namespace Etterem
             brush1.ImageSource = image1;
             TesztaKep1.Fill = brush1;
 
-            //2. hotdog
+            //2. teszta
 
             TesztaNev2.Content = teszta[1].nev;
             TesztaAr2.Content = teszta[1].ar + " Ft";
@@ -74,7 +74,7 @@ namespace Etterem
             brush2.ImageSource = image2;
             TesztaKep2.Fill = brush2;
 
-            //3. hotdog
+            //3. teszta
 
             TesztaNev3.Content = teszta[2].nev;
             TesztaAr3.Content = teszta[2].ar + " Ft";
@@ -92,7 +92,7 @@ namespace Etterem
             brush3.ImageSource = image3;
             TesztaKep3.Fill = brush3;
 
-            //4. hotdog
+            //4. teszta
 
             TesztaNev4.Content = teszta[3].nev;
             TesztaAr4.Content = teszta[3].ar + " Ft";
@@ -110,7 +110,7 @@ namespace Etterem
             brush4.ImageSource = image4;
             TesztaKep4.Fill = brush4;
 
-            //5. hotdog
+            //5. teszta
 
             TesztaNev5.Content = teszta[4].nev;
             TesztaAr5.Content = teszta[4].ar + " Ft";
@@ -145,6 +145,15 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(TesztaNev1.Content + " * " + darab1);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+
+            //Datagrid feltöltése
+            KosarTermek k = new KosarTermek();
+            k.ID = teszta[0].id;
+            k.Név = teszta[0].nev;
+            k.Ár = teszta[0].ar;
+            k.Típus = teszta[0].tipus;
+            k.Altípus = teszta[0].altipus;
+            MainWindow.Instance.Kosar.Add(k);
         }
         private void Teszta2_Click(object sender, RoutedEventArgs e)
         {
@@ -162,6 +171,15 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(TesztaNev2.Content + " * " + darab2);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+
+            //Datagrid feltöltése
+            KosarTermek k = new KosarTermek();
+            k.ID = teszta[1].id;
+            k.Név = teszta[1].nev;
+            k.Ár = teszta[1].ar;
+            k.Típus = teszta[1].tipus;
+            k.Altípus = teszta[1].altipus;
+            MainWindow.Instance.Kosar.Add(k);
         }
         private void Teszta3_Click(object sender, RoutedEventArgs e)
         {
@@ -179,6 +197,15 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(TesztaNev3.Content + " * " + darab3);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+
+            //Datagrid feltöltése
+            KosarTermek k = new KosarTermek();
+            k.ID = teszta[2].id;
+            k.Név = teszta[2].nev;
+            k.Ár = teszta[2].ar;
+            k.Típus = teszta[2].tipus;
+            k.Altípus = teszta[2].altipus;
+            MainWindow.Instance.Kosar.Add(k);
         }
         private void Teszta4_Click(object sender, RoutedEventArgs e)
         {
@@ -196,6 +223,15 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(TesztaNev4.Content + " * " + darab4);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+
+            //Datagrid feltöltése
+            KosarTermek k = new KosarTermek();
+            k.ID = teszta[3].id;
+            k.Név = teszta[3].nev;
+            k.Ár = teszta[3].ar;
+            k.Típus = teszta[3].tipus;
+            k.Altípus = teszta[3].altipus;
+            MainWindow.Instance.Kosar.Add(k);
         }
         private void Teszta5_Click(object sender, RoutedEventArgs e)
         {
@@ -213,6 +249,15 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(TesztaNev5.Content + " * " + darab5);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+
+            //Datagrid feltöltése
+            KosarTermek k = new KosarTermek();
+            k.ID = teszta[4].id;
+            k.Név = teszta[4].nev;
+            k.Ár = teszta[4].ar;
+            k.Típus = teszta[4].tipus;
+            k.Altípus = teszta[4].altipus;
+            MainWindow.Instance.Kosar.Add(k);
         }
 
     }

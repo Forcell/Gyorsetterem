@@ -8,13 +8,21 @@
              mc:Ignorable="d" 
              d:DesignHeight="538" d:DesignWidth="950">
     <Grid>
+        
+        <!--Elrendezés-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="700"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-            <DataGrid x:Name="dgFizetes" Width="700" HorizontalAlignment="Left" AutoGenerateColumns="True" IsReadOnly="True">
+
+        <!--Kosárba rakott termékek-->
+        <Grid>
+            <DataGrid x:Name="dgFizetes" Width="700" HorizontalAlignment="Left" AutoGenerateColumns="True" IsReadOnly="True" Height="auto">
 
             </DataGrid>
+        </Grid>
+
+        <!--Jobb oldali sáv, összeg megjelenítése-->
         <materialDesign:ColorZone Mode="PrimaryMid" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <Grid>
                 <Grid.RowDefinitions>
@@ -30,5 +38,6 @@
                 <Button x:Name="btVissza" Grid.Row="2" Content="Vissza" FontFamily="Bahnschrift Condensed" FontWeight="Bold" VerticalAlignment="Bottom" Foreground="GhostWhite" Style="{DynamicResource MaterialDesignFlatButton}" Click="btVissza_Click"/>
             </Grid>
         </materialDesign:ColorZone>
+        
     </Grid>
 </UserControl>

@@ -1,12 +1,70 @@
-﻿<Window x:Class="Etterem.UserControlEgeszseges"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Etterem"
-        mc:Ignorable="d"
-        Title="UserControlEgeszseges" Height="450" Width="800">
+﻿<UserControl x:Class="Etterem.UserControlEgeszseges"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Etterem"
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="950"
+             FontFamily="Segoe UI Emoji" Background="GhostWhite">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Egészséges #1-->
+        <Rectangle x:Name="EgeszsegesKep1" Grid.Column="0" Grid.Row="0" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="0" Margin="25">
+            <Label x:Name="EgeszsegesNev1" VerticalAlignment="Top" Content="Egészséges" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="EgeszsegesAr1" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="EgeszsegesId1" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="0" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Egeszseges1_Click"/>
+
+        <!--Egészséges #2-->
+        <Rectangle x:Name="EgeszsegesKep2" Grid.Column="0" Grid.Row="1" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="25">
+            <Label x:Name="EgeszsegesNev2" VerticalAlignment="Top" Content="Egészséges" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="EgeszsegesAr2" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="EgeszsegesId2" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="1" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Egeszseges2_Click"/>
+
+        <!--Egészséges #3-->
+        <Rectangle x:Name="EgeszsegesKep3" Grid.Column="0" Grid.Row="2" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="2" Margin="25">
+            <Label x:Name="EgeszsegesNev3" VerticalAlignment="Top" Content="Egészséges" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="EgeszsegesAr3" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="EgeszsegesId3" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="2" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Egeszseges3_Click"/>
+
+        <!--Egészséges #4-->
+        <Rectangle x:Name="EgeszsegesKep4" Grid.Column="0" Grid.Row="3" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="3" Margin="25">
+            <Label x:Name="EgeszsegesNev4" VerticalAlignment="Top" Content="Egészséges" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="EgeszsegesAr4" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="EgeszsegesId4" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="3" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Egeszseges4_Click"/>
+
+        <!--Egészséges #5-->
+        <Rectangle x:Name="EgeszsegesKep5" Grid.Column="0" Grid.Row="4" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="4" Margin="25">
+            <Label x:Name="EgeszsegesNev5" VerticalAlignment="Top" Content="Egészséges" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="EgeszsegesAr5" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="EgeszsegesId5" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="4" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Egeszseges5_Click"/>
+
     </Grid>
-</Window>
+</UserControl>

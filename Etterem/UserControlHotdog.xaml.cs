@@ -25,6 +25,7 @@ namespace Etterem
         public int darab4 = 0;
         public int darab5 = 0;
         public int darab6 = 0;
+        public List<Termek> hotdog = new List<Termek>();
 
         public UserControlHotdog()
         {
@@ -33,7 +34,7 @@ namespace Etterem
 
             //beolvasás adatbázisból
             
-            List<Termek> hotdog = new List<Termek>();
+            
 
             hotdog = MainWindow.Instance.adat.GetHotdog();
 
@@ -142,7 +143,18 @@ namespace Etterem
             {
                 MainWindow.Instance.KosarLista.Items.Add(HotdogNev1.Content + " * " + darab1);
             }
+
+            //Számláló
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+
+            //Datagrid feltöltése
+            KosarTermek k = new KosarTermek();
+            k.ID = hotdog[0].id;
+            k.Név = hotdog[0].nev;
+            k.Ár = hotdog[0].ar;
+            k.Típus = hotdog[0].tipus;
+            k.Altípus = hotdog[0].altipus;
+            MainWindow.Instance.Kosar.Add(k);
         }
         private void Hotdog2_Click(object sender, RoutedEventArgs e)
         {
@@ -160,6 +172,15 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(HotdogNev2.Content + " * " + darab2);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+
+            //Datagrid feltöltése
+            KosarTermek k = new KosarTermek();
+            k.ID = hotdog[1].id;
+            k.Név = hotdog[1].nev;
+            k.Ár = hotdog[1].ar;
+            k.Típus = hotdog[1].tipus;
+            k.Altípus = hotdog[1].altipus;
+            MainWindow.Instance.Kosar.Add(k);
         }
         private void Hotdog3_Click(object sender, RoutedEventArgs e)
         {
@@ -177,6 +198,15 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(HotdogNev3.Content + " * " + darab3);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+
+            //Datagrid feltöltése
+            KosarTermek k = new KosarTermek();
+            k.ID = hotdog[2].id;
+            k.Név = hotdog[2].nev;
+            k.Ár = hotdog[2].ar;
+            k.Típus = hotdog[2].tipus;
+            k.Altípus = hotdog[2].altipus;
+            MainWindow.Instance.Kosar.Add(k);
         }
         private void Hotdog4_Click(object sender, RoutedEventArgs e)
         {
@@ -194,6 +224,15 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(HotdogNev4.Content + " * " + darab4);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+
+            //Datagrid feltöltése
+            KosarTermek k = new KosarTermek();
+            k.ID = hotdog[3].id;
+            k.Név = hotdog[3].nev;
+            k.Ár = hotdog[3].ar;
+            k.Típus = hotdog[3].tipus;
+            k.Altípus = hotdog[3].altipus;
+            MainWindow.Instance.Kosar.Add(k);
         }
         private void Hotdog5_Click(object sender, RoutedEventArgs e)
         {
@@ -211,6 +250,15 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(HotdogNev5.Content + " * " + darab5);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+
+            //Datagrid feltöltése
+            KosarTermek k = new KosarTermek();
+            k.ID = hotdog[4].id;
+            k.Név = hotdog[4].nev;
+            k.Ár = hotdog[4].ar;
+            k.Típus = hotdog[4].tipus;
+            k.Altípus = hotdog[4].altipus;
+            MainWindow.Instance.Kosar.Add(k);
         }
     }
 }

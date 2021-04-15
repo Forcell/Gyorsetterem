@@ -1,12 +1,60 @@
-﻿<Window x:Class="Etterem.UserControlSzensavmentes"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Etterem"
-        mc:Ignorable="d"
-        Title="UserControlSzensavmentes" Height="450" Width="800">
+﻿<UserControl x:Class="Etterem.UserControlSzensavmentes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Etterem"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="950"
+             FontFamily="Segoe UI Emoji" Background="GhostWhite">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--Szénsavmentes #1-->
+        <Rectangle x:Name="SzensavmentesKep1" Grid.Column="0" Grid.Row="0" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="0" Margin="25">
+            <Label x:Name="SzensavmentesNev1" VerticalAlignment="Top" Content="Szénsavmentes" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SzensavmentesAr1" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SzensavmentesId1" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="0" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Szensavmentes1_Click"/>
+
+        <!--Szénsavmentes #2-->
+        <Rectangle x:Name="SzensavmentesKep2" Grid.Column="0" Grid.Row="1" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="1" Margin="25">
+            <Label x:Name="SzensavmentesNev2" VerticalAlignment="Top" Content="Szénsavmentes" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SzensavmentesAr2" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SzensavmentesId2" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="1" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Szensavmentes2_Click"/>
+
+        <!--Szénsavmentes #3-->
+        <Rectangle x:Name="SzensavmentesKep3" Grid.Column="0" Grid.Row="2" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="2" Margin="25">
+            <Label x:Name="SzensavmentesNev3" VerticalAlignment="Top" Content="Szénsavmentes" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SzensavmentesAr3" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SzensavmentesId3" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="2" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Szensavmentes3_Click"/>
+
+        <!--Szénsavmentes #4-->
+        <Rectangle x:Name="SzensavmentesKep4" Grid.Column="0" Grid.Row="3" Margin="36,30,36,30"/>
+        <StackPanel Grid.Column="1" Grid.Row="3" Margin="25">
+            <Label x:Name="SzensavmentesNev4" VerticalAlignment="Top" Content="Szénsavmentes" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SzensavmentesAr4" Grid.Column="1" Content="Ár: 250$" FontSize="25" FontWeight="Bold"/>
+            <Label x:Name="SzensavmentesId4" Grid.Column="1" Content="Id: 263462396" FontSize="25" Foreground="LightGray"/>
+        </StackPanel>
+        <Button Grid.Column="2" Grid.Row="3" Margin="30" Content="Kosárba" FontSize="25" Height="60" Click="Szensavmentes4_Click"/>
+
     </Grid>
-</Window>
+</UserControl>
