@@ -29,5 +29,16 @@ namespace Etterem
             Loginablak.Visibility = Visibility.Collapsed;
             regablak.Visibility = Visibility.Visible;
         }
+        //elfelejtett jelszó gomb
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Loginablak.Visibility = Visibility.Collapsed;
+            ElfelejtettAblak.Visibility = Visibility.Visible;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
