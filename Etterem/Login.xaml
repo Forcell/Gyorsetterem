@@ -19,7 +19,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        
+
         <!--Kék rész-->
         <Rectangle Height="280" VerticalAlignment="Top" Grid.Row="1">
             <Rectangle.Fill>
@@ -35,7 +35,7 @@
                 <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
             </Rectangle.Effect>
         </Rectangle>
-        
+
         <!--Bejelentkezés cella tartalma-->
         <Grid VerticalAlignment="Bottom" Margin="35,80" Height="240" Grid.Row="1">
             <Label Content="BEJELENTKEZÉS" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18"/>
@@ -44,14 +44,19 @@
                 <PasswordBox Margin="0,10" materialDesign:HintAssist.Hint="JELSZÓ" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
             </StackPanel>
         </Grid>
-        
+
         <!--Bejelentkezés gomb-->
         <Button Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" Content="BEJELENTKEZÉS" Grid.Row="1"/>
-        
+
+        <!--Regisztráció-->
+        <Button Content="Regisztráció" HorizontalAlignment="Center" Margin="0,409,0,0" VerticalAlignment="Top" Height="20" FontSize="10" Background="Transparent" Foreground="Gray" BorderBrush="Transparent"/>
+
         <!--Elfelejtett jelszó-->
-        <TextBlock Text="Elfelejtett jelszó?" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="30" Foreground="Gray" Cursor="Hand" Grid.Row="1" ToolTip="Így jártál! xd &#x0a;Írtad volna fel lol "/>
-        
+        <Button Content="Elfelejtett jelszó" HorizontalAlignment="Center" Margin="0,434,0,0" VerticalAlignment="Top" Height="20" FontSize="10" Background="Transparent" Foreground="Gray" BorderBrush="Transparent"/>
+
         <!--Kép-->
         <Image Source="Images/McTomlek.png" Width="120" Height="120" VerticalAlignment="Top" Margin="30" Grid.Row="1"/>
+
+
     </Grid>
 </Window>
