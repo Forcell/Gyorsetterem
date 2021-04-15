@@ -10,8 +10,11 @@
         ResizeMode="NoResize" 
         Icon="Images/Logo.png"
         WindowStartupLocation="CenterScreen"  
-        FontFamily="Segoe UI Emoji">
+        FontFamily="Segoe UI Emoji"
+        >
+    <!--Login Ablak-->
     <Grid>
+    <Grid x:Name="Loginablak" Visibility="Visible">
         <Rectangle Height="50" VerticalAlignment="Top" Grid.Row="1">
             <Rectangle.Fill>
                 <LinearGradientBrush>
@@ -40,7 +43,7 @@
         <Grid VerticalAlignment="Bottom" Margin="35,80" Height="240" Grid.Row="1">
             <Label Content="BEJELENTKEZÉS" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18"/>
             <StackPanel VerticalAlignment="Center" Margin="15">
-                <TextBox Margin="0,10" materialDesign:HintAssist.Hint="EMAIL" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                <TextBox Margin="0,10" materialDesign:HintAssist.Hint="FELHASZNÁLÓNÉV" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
                 <PasswordBox Margin="0,10" materialDesign:HintAssist.Hint="JELSZÓ" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
             </StackPanel>
         </Grid>
@@ -49,7 +52,7 @@
         <Button Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" Content="BEJELENTKEZÉS" Grid.Row="1"/>
 
         <!--Regisztráció-->
-        <Button Content="Regisztráció" HorizontalAlignment="Center" Margin="0,409,0,0" VerticalAlignment="Top" Height="20" FontSize="10" Background="Transparent" Foreground="Gray" BorderBrush="Transparent"/>
+        <Button Content="Regisztráció" HorizontalAlignment="Center" Margin="0,409,0,0" VerticalAlignment="Top" Height="20" FontSize="10" Background="Transparent" Foreground="Gray" BorderBrush="Transparent" Click="Button_Click"/>
 
         <!--Elfelejtett jelszó-->
         <Button Content="Elfelejtett jelszó" HorizontalAlignment="Center" Margin="0,434,0,0" VerticalAlignment="Top" Height="20" FontSize="10" Background="Transparent" Foreground="Gray" BorderBrush="Transparent"/>
@@ -58,5 +61,43 @@
         <Image Source="Images/McTomlek.png" Width="120" Height="120" VerticalAlignment="Top" Margin="30" Grid.Row="1"/>
 
 
+        </Grid>
+        <Grid x:Name="regablak" Visibility="Collapsed">
+            <Rectangle Height="50" VerticalAlignment="Top" Grid.Row="1">
+                <Rectangle.Fill>
+                    <LinearGradientBrush>
+                        <GradientStop Color="GhostWhite"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+
+            <!--Kék rész-->
+            <Rectangle Height="280" VerticalAlignment="Top" Grid.Row="1">
+                <Rectangle.Fill>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#5796fa"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
+
+            <Rectangle Width="280" Height="240" VerticalAlignment="Bottom" Margin="0,80" RadiusY="0" RadiusX="0" Fill="GhostWhite" Grid.Row="1">
+                <Rectangle.Effect>
+                    <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
+                </Rectangle.Effect>
+            </Rectangle>
+            <!--Regisztráció cella tartalma-->
+            <Grid VerticalAlignment="Bottom" Margin="35,80" Height="240" Grid.Row="1">
+                <Label Content="REGISZTRÁCIÓ" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18"/>
+                <StackPanel VerticalAlignment="Center" Margin="15">
+                    <TextBox Margin="0,10" materialDesign:HintAssist.Hint="FELHASZNÁLÓNÉV" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                    <TextBox Margin="0,10" materialDesign:HintAssist.Hint="EMAIL" Style="{StaticResource MaterialDesignFloatingHintTextBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                    <PasswordBox Margin="0,10" materialDesign:HintAssist.Hint="JELSZÓ" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
+                </StackPanel>
+            </Grid>
+            <!--Regisztráció gomb-->
+            <Button x:Name="Regisztráció" Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" Content="Regisztráció" Grid.Row="1"/>
+            <!--Kép-->
+            <Image Source="Images/McTomlek.png" Width="120" Height="120" VerticalAlignment="Top" Margin="30" Grid.Row="1"/>
+        </Grid>
     </Grid>
 </Window>

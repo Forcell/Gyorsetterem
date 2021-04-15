@@ -23,5 +23,11 @@ namespace Etterem
         {
             InitializeComponent();
         }
+        //Regisztracio gomb
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Loginablak.Visibility = Visibility.Collapsed;
+            regablak.Visibility = Visibility.Visible;
+        }
     }
 }
