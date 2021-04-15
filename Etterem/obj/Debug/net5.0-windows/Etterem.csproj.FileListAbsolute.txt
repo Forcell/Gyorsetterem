@@ -292,3 +292,9 @@ C:\Users\Kristóf\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows
 C:\Users\Kristóf\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlFizetes.baml
 C:\Users\Kristóf\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlThankYou.g.cs
 C:\Users\Kristóf\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlThankYou.baml
+C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlFizetes.g.cs
+C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlHome.g.cs
+C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlThankYou.g.cs
+C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlFizetes.baml
+C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlHome.baml
+C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlThankYou.baml

@@ -154,7 +154,7 @@ namespace Etterem
             //Számláló
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
 
-            //Datagrid Load
+            //Datagrid feltöltése
             KosarTermek k = new KosarTermek();
             k.ID = hamburger[0].id;
             k.Név = hamburger[0].nev;
@@ -180,7 +180,8 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(HamburgerNev2.Content + " * " + darab2);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
-            //Datagrid Load
+
+            //Datagrid feltöltése
             KosarTermek k = new KosarTermek();
             k.ID = hamburger[1].id;
             k.Név = hamburger[1].nev;
@@ -207,7 +208,8 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(HamburgerNev3.Content + " * " + darab3);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
-            //Datagrid Load
+
+            //Datagrid feltöltése
             KosarTermek k = new KosarTermek();
             k.ID = hamburger[2].id;
             k.Név = hamburger[2].nev;
@@ -234,7 +236,8 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(HamburgerNev4.Content + " * " + darab4);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
-            //Datagrid Load
+
+            //Datagrid feltöltése
             KosarTermek k = new KosarTermek();
             k.ID = hamburger[3].id;
             k.Név = hamburger[3].nev;
@@ -253,8 +256,8 @@ namespace Etterem
             if (darab5 > 1)
             {
                 darab6 = darab5 - 1;
-                MainWindow.Instance.KosarLista.Items.Remove(HamburgerNev5.Content + " * " + darab5);
-                MainWindow.Instance.KosarLista.Items.Add(HamburgerNev5.Content + " * " + darab2);
+                MainWindow.Instance.KosarLista.Items.Remove(HamburgerNev5.Content + " * " + darab6);
+                MainWindow.Instance.KosarLista.Items.Add(HamburgerNev5.Content + " * " + darab5);
             }
             else
             {
@@ -262,7 +265,7 @@ namespace Etterem
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
 
-            //Datagrid Load
+            //Datagrid feltöltése
             KosarTermek k = new KosarTermek();
             k.ID = hamburger[4].id;
             k.Név = hamburger[4].nev;

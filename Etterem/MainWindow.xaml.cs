@@ -163,7 +163,7 @@ namespace Etterem
             //Szénsavas italok darabszámának nullázása
             //Szénsavmentes italok darabszámának nullázása
             //Alkoholos italok darabszámának nullázása
-            szamlalo = 0;
+            MainWindow.Instance.szamlalo = 0;
 
         }
 
@@ -177,6 +177,8 @@ namespace Etterem
         {
             SwitchScreen(new UserControlHome());
         }
+
+        //Végösszeg
         public int Fizetendo()
         {
             int ossz = 0;
