@@ -54,6 +54,9 @@
     <Compile Update="UserControlTeszta.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="UserControlThankYou.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Login.xaml">
@@ -102,6 +105,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserControlTeszta.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControlThankYou.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

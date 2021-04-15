@@ -16,26 +16,18 @@ using System.Windows.Shapes;
 namespace Etterem
 {
     /// <summary>
-    /// Interaction logic for UserControlFizetes.xaml
+    /// Interaction logic for UserControlThankYou.xaml
     /// </summary>
-    public partial class UserControlFizetes : UserControl
+    public partial class UserControlThankYou : UserControl
     {
-        public static UserControlFizetes Instance;
-        public UserControlFizetes()
+        public UserControlThankYou()
         {
-            Instance = this;
             InitializeComponent();
-            tbVegosszeg.Text = (MainWindow.Instance.Fizetendo().ToString()) + "$";
         }
 
         private void btVissza_Click(object sender, RoutedEventArgs e)
         {
             MainWindow.Instance.SwitchScreen(new UserControlHome());
-        }
-
-        private void btKifizet_Click(object sender, RoutedEventArgs e)
-        {
-            MainWindow.Instance.SwitchScreen(new UserControlThankYou());
         }
     }
 }

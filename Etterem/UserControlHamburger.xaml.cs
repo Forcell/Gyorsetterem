@@ -153,26 +153,15 @@ namespace Etterem
              }
             //Számláló
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
-            int rendeltdb = 0;
-            for(int i=0; i<MainWindow.Instance.Kosar.Count();i++)
-            {
-                if(MainWindow.Instance.Kosar[i].id==hamburger[0].id)
-                {
-                    MainWindow.Instance.Kosar[i].db++;
-                    break;
-                }
-                else
-                {
-                    KosarTermek k = new KosarTermek();
-                    k.ar = hamburger[0].ar;
-                    k.nev = hamburger[0].nev;
-                    k.tipus = hamburger[0].tipus;
-                    k.altipus = hamburger[0].altipus;
-                    k.db = rendeltdb;
-                    MainWindow.Instance.Kosar.Add(k);
-                }
-            }
-            
+
+            //Datagrid Load
+            KosarTermek k = new KosarTermek();
+            k.ID = hamburger[0].id;
+            k.Név = hamburger[0].nev;
+            k.Ár = hamburger[0].ar;
+            k.Típus = hamburger[0].tipus;
+            k.Altípus = hamburger[0].altipus;
+            MainWindow.Instance.Kosar.Add(k);
         }
 
         private void Hamburger2_Click(object sender, RoutedEventArgs e)
@@ -191,6 +180,15 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(HamburgerNev2.Content + " * " + darab2);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+            //Datagrid Load
+            KosarTermek k = new KosarTermek();
+            k.ID = hamburger[1].id;
+            k.Név = hamburger[1].nev;
+            k.Ár = hamburger[1].ar;
+            k.Típus = hamburger[1].tipus;
+            k.Altípus = hamburger[1].altipus;
+            MainWindow.Instance.Kosar.Add(k);
+
         }
 
         private void Hamburger3_Click(object sender, RoutedEventArgs e)
@@ -209,6 +207,15 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(HamburgerNev3.Content + " * " + darab3);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+            //Datagrid Load
+            KosarTermek k = new KosarTermek();
+            k.ID = hamburger[2].id;
+            k.Név = hamburger[2].nev;
+            k.Ár = hamburger[2].ar;
+            k.Típus = hamburger[2].tipus;
+            k.Altípus = hamburger[2].altipus;
+            MainWindow.Instance.Kosar.Add(k);
+
         }
 
         private void Hamburger4_Click(object sender, RoutedEventArgs e)
@@ -227,6 +234,15 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(HamburgerNev4.Content + " * " + darab4);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+            //Datagrid Load
+            KosarTermek k = new KosarTermek();
+            k.ID = hamburger[3].id;
+            k.Név = hamburger[3].nev;
+            k.Ár = hamburger[3].ar;
+            k.Típus = hamburger[3].tipus;
+            k.Altípus = hamburger[3].altipus;
+            MainWindow.Instance.Kosar.Add(k);
+
         }
 
         private void Hamburger5_Click(object sender, RoutedEventArgs e)
@@ -245,6 +261,16 @@ namespace Etterem
                 MainWindow.Instance.KosarLista.Items.Add(HamburgerNev5.Content + " * " + darab5);
             }
             MainWindow.Instance.KosarOsszesDarab.Text = MainWindow.Instance.szamlalo.ToString();
+
+            //Datagrid Load
+            KosarTermek k = new KosarTermek();
+            k.ID = hamburger[4].id;
+            k.Név = hamburger[4].nev;
+            k.Ár = hamburger[4].ar;
+            k.Típus = hamburger[4].tipus;
+            k.Altípus = hamburger[4].altipus;
+            MainWindow.Instance.Kosar.Add(k);
+
         }
 
     }

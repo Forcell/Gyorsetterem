@@ -12,10 +12,9 @@
             <ColumnDefinition Width="700"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <DataGrid x:Name="dgFizetes" Width="700" HorizontalAlignment="Left">
-            
-        </DataGrid>
+            <DataGrid x:Name="dgFizetes" Width="700" HorizontalAlignment="Left" AutoGenerateColumns="True" IsReadOnly="True">
 
+            </DataGrid>
         <materialDesign:ColorZone Mode="PrimaryMid" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
             <Grid>
                 <Grid.RowDefinitions>
@@ -27,8 +26,8 @@
                     <TextBlock Text="Összesen:" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="30" FontFamily="Bahnschrift Condensed"/>
                     <TextBlock x:Name="tbVegosszeg" VerticalAlignment="Center" Text="258$" FontSize="50" HorizontalAlignment="Center" FontFamily="Bahnschrift Condensed"/>
                 </StackPanel>
-                <Button x:Name="btKifizet" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Fizetés" Height="50" Width="120" Foreground="GhostWhite" Style="{DynamicResource MaterialDesignRaisedLightButton}"/>
-                <Button x:Name="btVissza" Grid.Row="2" Content="Vissza" FontFamily="Bahnschrift Condensed" FontWeight="Bold" VerticalAlignment="Bottom" Foreground="GhostWhite" Style="{DynamicResource MaterialDesignFlatButton}"/>
+                <Button x:Name="btKifizet" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Fizetés" Height="50" Width="120" Foreground="GhostWhite" Style="{DynamicResource MaterialDesignRaisedLightButton}" Click="btKifizet_Click"/>
+                <Button x:Name="btVissza" Grid.Row="2" Content="Vissza" FontFamily="Bahnschrift Condensed" FontWeight="Bold" VerticalAlignment="Bottom" Foreground="GhostWhite" Style="{DynamicResource MaterialDesignFlatButton}" Click="btVissza_Click"/>
             </Grid>
         </materialDesign:ColorZone>
     </Grid>

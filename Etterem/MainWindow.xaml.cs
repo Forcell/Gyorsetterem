@@ -38,6 +38,7 @@ namespace Etterem
 
             adat = new Hozzaferes();
 
+
             
 
             //Kezdőlap menüpont
@@ -169,11 +170,21 @@ namespace Etterem
         private void Fizetes_Click(object sender, RoutedEventArgs e)
         {
             SwitchScreen(new UserControlFizetes());
+            UserControlFizetes.Instance.dgFizetes.ItemsSource = Kosar;
         }
 
         private void LogoRow_MouseDown(object sender, MouseButtonEventArgs e)
         {
             SwitchScreen(new UserControlHome());
+        }
+        public int Fizetendo()
+        {
+            int ossz = 0;
+            foreach (var r in Kosar)
+            {
+                ossz = r.Ár+ossz;
+            }
+            return ossz;
         }
     }
 }

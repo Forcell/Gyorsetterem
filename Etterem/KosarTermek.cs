@@ -8,11 +8,10 @@ namespace Etterem
 {
     public class KosarTermek
     {
-        public int id { get; set; }
-        public string nev { get; set; }
-        public int ar { get; set; }
-        public string tipus { get; set; }
-        public string altipus { get; set; }
-        public int db { get; set; }
+        public int ID { get; set; }
+        public string Név { get; set; }
+        public int Ár { get; set; }
+        public string Típus { get; set; }
+        public string Altípus { get; set; }
     }
 }
