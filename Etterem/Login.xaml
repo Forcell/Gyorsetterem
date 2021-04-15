@@ -14,7 +14,6 @@
         >
     <!--Login Ablak-->
     <Grid>
-    <Grid x:Name="Loginablak" Visibility="Visible">
         <Rectangle Height="50" VerticalAlignment="Top" Grid.Row="1">
             <Rectangle.Fill>
                 <LinearGradientBrush>
@@ -38,8 +37,12 @@
                 <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
             </Rectangle.Effect>
         </Rectangle>
+        
+        <!--Kép-->
+        <Image Source="Images/McTomlek.png" Width="120" Height="120" VerticalAlignment="Top" Margin="30" Grid.Row="1"/>
 
-        <!--Bejelentkezés cella tartalma-->
+        <Grid x:Name="Loginablak" Visibility="Visible">
+                <!--Bejelentkezés cella tartalma-->
         <Grid VerticalAlignment="Bottom" Margin="35,80" Height="240" Grid.Row="1">
             <Label Content="BEJELENTKEZÉS" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18"/>
             <StackPanel VerticalAlignment="Center" Margin="15">
@@ -57,34 +60,8 @@
         <!--Elfelejtett jelszó-->
         <Button Content="Elfelejtett jelszó" HorizontalAlignment="Center" Margin="0,434,0,0" VerticalAlignment="Top" Height="20" FontSize="10" Background="Transparent" Foreground="Gray" BorderBrush="Transparent" Click="Button_Click_1"/>
 
-        <!--Kép-->
-        <Image Source="Images/McTomlek.png" Width="120" Height="120" VerticalAlignment="Top" Margin="30" Grid.Row="1"/>
-
-
         </Grid>
         <Grid x:Name="regablak" Visibility="Collapsed">
-            <Rectangle Height="50" VerticalAlignment="Top" Grid.Row="1">
-                <Rectangle.Fill>
-                    <LinearGradientBrush>
-                        <GradientStop Color="GhostWhite"/>
-                    </LinearGradientBrush>
-                </Rectangle.Fill>
-            </Rectangle>
-
-            <!--Kék rész-->
-            <Rectangle Height="280" VerticalAlignment="Top" Grid.Row="1">
-                <Rectangle.Fill>
-                    <LinearGradientBrush>
-                        <GradientStop Color="#5796fa"/>
-                    </LinearGradientBrush>
-                </Rectangle.Fill>
-            </Rectangle>
-
-            <Rectangle Width="280" Height="240" VerticalAlignment="Bottom" Margin="0,80" RadiusY="0" RadiusX="0" Fill="GhostWhite" Grid.Row="1">
-                <Rectangle.Effect>
-                    <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
-                </Rectangle.Effect>
-            </Rectangle>
             <!--Regisztráció cella tartalma-->
             <Grid VerticalAlignment="Bottom" Margin="35,80" Height="240" Grid.Row="1">
                 <Label Content="REGISZTRÁCIÓ" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18"/>
@@ -96,33 +73,8 @@
             </Grid>
             <!--Regisztráció gomb-->
             <Button x:Name="Regisztráció" Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" Content="Regisztráció" Grid.Row="1"/>
-            <!--Kép-->
-            <Image Source="Images/McTomlek.png" Width="120" Height="120" VerticalAlignment="Top" Margin="30" Grid.Row="1"/>
         </Grid>
         <Grid x:Name="ElfelejtettAblak" Visibility="Collapsed">
-            <Rectangle Height="50" VerticalAlignment="Top" Grid.Row="1">
-                <Rectangle.Fill>
-                    <LinearGradientBrush>
-                        <GradientStop Color="GhostWhite"/>
-                    </LinearGradientBrush>
-                </Rectangle.Fill>
-            </Rectangle>
-
-            <!--Kék rész-->
-            <Rectangle Height="280" VerticalAlignment="Top" Grid.Row="1">
-                <Rectangle.Fill>
-                    <LinearGradientBrush>
-                        <GradientStop Color="#5796fa"/>
-                    </LinearGradientBrush>
-                </Rectangle.Fill>
-            </Rectangle>
-
-            <!-- cella színe-->
-            <Rectangle Width="280" Height="240" VerticalAlignment="Bottom" Margin="0,80" RadiusY="0" RadiusX="0" Fill="GhostWhite" Grid.Row="1">
-                <Rectangle.Effect>
-                    <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
-                </Rectangle.Effect>
-            </Rectangle>
             <!--elfelejtett jelszo cella tartalma-->
             <Grid VerticalAlignment="Bottom" Margin="35,80" Height="240" Grid.Row="1">
                 <Label Content="ELFELEJTETT JELSZÓ" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18"/>
@@ -133,8 +85,7 @@
                     </Grid>
                 </StackPanel>
             </Grid>
-            <!--Kép-->
-            <Image Source="Images/McTomlek.png" Width="120" Height="120" VerticalAlignment="Top" Margin="30" Grid.Row="1"/>
+            
             <!--Jelszót kérő gomb gomb-->
             <Button x:Name="ElfelejtettJelszó" Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" Content="Kérem a jelszót!" Grid.Row="1" Click="Button_Click_2"/>
             <!--Jelszó első pár betűje-->
