@@ -8,21 +8,22 @@
              mc:Ignorable="d" 
              d:DesignHeight="530" d:DesignWidth="950">
     <Grid>
+        <!--Elosztás-->
         <Grid.RowDefinitions>
             <RowDefinition Height="400"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="130"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        
+        <!--Felső szöveg-->
         <materialDesign:ColorZone Mode="PrimaryMid" Height="450">
             <TextBlock VerticalAlignment="Top" HorizontalAlignment="Center" TextAlignment="Center" FontSize="80" Text="Köszönjük a Vásárlást!" Foreground="White" FontFamily="Bahnschrift Condensed" Height="93" Width="882" Margin="0,177,0,0"/>
         </materialDesign:ColorZone>
-        <materialDesign:ColorZone Mode="PrimaryMid" Grid.Row="1" Height="100">
+        
+        <!--Alsó rész (vissza gomb)-->
+        <materialDesign:ColorZone Mode="PrimaryMid" Grid.Row="1" Height="130">
             <Button x:Name="btVissza" Grid.Row="1" Style="{DynamicResource MaterialDesignFlatButton}" Content="Vissza" Foreground="White" FontFamily="Bahnschrift Condensed" Height="80" Width="200" FontSize="40" Click="btVissza_Click"/>
         </materialDesign:ColorZone>
-        <materialDesign:ColorZone Mode="PrimaryMid" Grid.Row="2" Height="100">
-
-        </materialDesign:ColorZone>
-
-
+        
     </Grid>
 </UserControl>

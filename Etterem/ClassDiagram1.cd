@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Etterem.App" Collapsed="true">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Etterem.Hozzaferes" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAACEBAAAAAAAACQAAAAEAAAAgAAAIBAAAAEAAAAAQA=</HashCode>
+      <FileName>Hozzaferes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Etterem.Kapcsolat" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Kapcsolat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Etterem.KosarTermek" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAgAAAAAAAAAAAAAAACAAAAAAAAIAAAAA=</HashCode>
+      <FileName>KosarTermek.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Etterem.Login" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Login.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAACAAggAAIBAAAAAAAACAQAEQQgAQAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.Megrendelő" Collapsed="true">
+    <Position X="3.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAEAAAAAAAgAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>tblMegrendelő.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Etterem.Rendeles" Collapsed="true">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAQAAAAAAQAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>tblRendeles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Etterem.Termek" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAkAAAAgAACAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>tblTermek.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Etterem.UserControlAlkoholos" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAQAAAAAAAAPAAQAAAAAAAAAA=</HashCode>
+      <FileName>UserControlAlkoholos.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.UserControlDesszert" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAQAAAAABQAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>UserControlDesszert.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.UserControlEgeszseges" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAQAAAAAAAAQEEAAAAAAgAAQAAAgAAAAAA=</HashCode>
+      <FileName>UserControlEgeszseges.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.UserControlFizetes" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAABAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>UserControlFizetes.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.UserControlGyros" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAEAAAAQAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>UserControlGyros.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.UserControlHamburger" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAXwAAAAAAAAAAQAAAAAAAEAA=</HashCode>
+      <FileName>UserControlHamburger.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.UserControlHome" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControlHome.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.UserControlHotdog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAA9AAAQAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>UserControlHotdog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.UserControlMenuItem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControlMenuItem.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.UserControlPizza" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAQAAAAAAAAAAAQAABAAAAAAA=</HashCode>
+      <FileName>UserControlPizza.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.UserControlSulthus" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAACEAAQAAAAAAAAAAAQAEIAAAAgAA=</HashCode>
+      <FileName>UserControlSulthus.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.UserControlSzensavas" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAQAAAAIAeAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>UserControlSzensavas.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.UserControlSzensavmentes" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAgAAAAAAAAAAQAAAAAAAAAAAUAEAAAAAAEA=</HashCode>
+      <FileName>UserControlSzensavmentes.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.UserControlTeszta" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACQAAAgGMAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>UserControlTeszta.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Etterem.UserControlThankYou" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UserControlThankYou.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BeautySolutions.View.ViewModel.ItemMenu" Collapsed="true">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ItemMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BeautySolutions.View.ViewModel.SubItem" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SubItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

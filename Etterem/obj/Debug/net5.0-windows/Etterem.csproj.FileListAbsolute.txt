@@ -338,3 +338,5 @@ C:\Users\Mashu\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\Us
 C:\Users\Mashu\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlSzensavmentes.baml
 C:\Users\Mashu\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlTeszta.baml
 C:\Users\Mashu\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlThankYou.baml
+C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlRendeles.g.cs
+C:\Users\matek\Documents\GitHub\Gyorsetterem\Etterem\obj\Debug\net5.0-windows\UserControlRendeles.baml

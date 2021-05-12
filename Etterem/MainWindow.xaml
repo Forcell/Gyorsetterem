@@ -58,7 +58,6 @@
                 <StackPanel HorizontalAlignment="Right" Margin="10">
                     <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges" HorizontalAlignment="Right" StaysOpen="False">
                         <StackPanel Width="150">
-                            <Button Name="btSettings" Content="Settings"/>
                             <Button Name="btLogin" Content="Login" Click="btLogin_Click"/>
                             <Button Name="btExit" Content="Exit" Click="btExit_Click"/>
                         </StackPanel>

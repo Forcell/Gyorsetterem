@@ -23,13 +23,15 @@ namespace Etterem
         {
             InitializeComponent();
         }
-        //Regisztracio gomb
+
+        //Regisztráció gomb
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Loginablak.Visibility = Visibility.Collapsed;
             regablak.Visibility = Visibility.Visible;
         }
-        //elfelejtett jelszó gomb
+
+        //Elfelejtett jelszó gomb
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             Loginablak.Visibility = Visibility.Collapsed;

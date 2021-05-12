@@ -11,16 +11,7 @@ namespace Etterem
 {
     public class Hozzaferes
     {
-
-        public List<Megrendelő> GetMegrendelo()
-        {
-            using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
-            {
-                var rendelo = kapcsolat.Query<Megrendelő>("select * from Megrendelo").ToList();
-
-                return rendelo;
-            }
-        }
+        //Pizzák kinyerése adatbázisból
         public List<Termek> GetPizza()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
@@ -31,6 +22,7 @@ namespace Etterem
             }
         }
 
+        //Hamburgerek kinyerése adatbázisból
         public List<Termek> GetHamburger()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
@@ -40,6 +32,8 @@ namespace Etterem
                 return hamburger;
             }
         }
+
+        //Hotdogok kinyerése adatbázisból
         public List<Termek> GetHotdog()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
@@ -49,6 +43,8 @@ namespace Etterem
                 return hotdog;
             }
         }
+
+        //Tészták kinyerése adatbázisból
         public List<Termek> GetTeszta()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
@@ -59,6 +55,7 @@ namespace Etterem
             }
         }
 
+        //Sülthúsok kinyerése adatbázisból
         public List<Termek> GetSulthus()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
@@ -69,6 +66,7 @@ namespace Etterem
             }
         }
 
+        //Gyrosok kinyerése adatbázisból
         public List<Termek> GetGyros()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
@@ -78,6 +76,8 @@ namespace Etterem
                 return gyros;
             }
         }
+
+        //Egésséges ételek kinyerése adatbázisból
         public List<Termek> GetEgeszseges()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
@@ -87,6 +87,8 @@ namespace Etterem
                 return egeszseges;
             }
         }
+
+        //Desszertek kinyerése adatbázisból
         public List<Termek> GetDesszert()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
@@ -96,6 +98,8 @@ namespace Etterem
                 return desszert;
             }
         }
+
+        //Szénsavas italok kinyerése adatbázisból
         public List<Termek> GetSzensavas()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
@@ -105,6 +109,8 @@ namespace Etterem
                 return szensavas;
             }
         }
+
+        //Szénsavmentes italok kinyerése adatbázisból
         public List<Termek> GetSzensavmentes()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
@@ -114,6 +120,8 @@ namespace Etterem
                 return szensavmentes;
             }
         }
+
+        //Alkoholos italok kinyerése adatbázisból
         public List<Termek> GetAlkoholos()
         {
             using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
@@ -121,6 +129,46 @@ namespace Etterem
                 List<Termek> alkoholos = kapcsolat.Query<Termek>("SELECT * FROM Termek WHERE altipus='Alkoholos'").ToList();
 
                 return alkoholos;
+            }
+        }
+
+        //Id-k növelése rendelésenkként
+        public int GetId()
+        {
+            List<Rendeles> rendelesLista;
+
+            using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
+            {
+                rendelesLista = kapcsolat.Query<Rendeles>("SELECT * FROM rendeles").ToList();
+
+                if(rendelesLista.Count == 0)
+                {
+                    return 0;
+                }
+                else
+                {
+                    return rendelesLista.Count();
+                }
+            }
+        }
+
+        //Leadott rendelés adatbázisba írása
+        public void RendelesLead(Rendeles rendelve)
+        { 
+            using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
+            {
+                kapcsolat.Execute("INSERT INTO Rendeles (id, nev, telefon, cim, rendelve) values (@id, @nev, @telefon, @cim, @rendelve)", rendelve);
+            }
+        }
+
+        //Rendelés megjelenítése
+        public List<Rendeles> GetRendelesek()
+        {
+            using (IDbConnection kapcsolat = new SQLiteConnection(Kapcsolat.Kapcsolodas("dtbEtterem")))
+            {
+                List<Rendeles> rendelesek = kapcsolat.Query<Rendeles>("SELECT * FROM Rendeles").ToList();
+
+                return rendelesek;
             }
         }
     }

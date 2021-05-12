@@ -42,7 +42,8 @@
         <Image Source="Images/McTomlek.png" Width="120" Height="120" VerticalAlignment="Top" Margin="30" Grid.Row="1"/>
 
         <Grid x:Name="Loginablak" Visibility="Visible">
-                <!--Bejelentkezés cella tartalma-->
+            
+        <!--Bejelentkezés cella tartalma-->
         <Grid VerticalAlignment="Bottom" Margin="35,80" Height="240" Grid.Row="1">
             <Label Content="BEJELENTKEZÉS" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18"/>
             <StackPanel VerticalAlignment="Center" Margin="15">
@@ -62,6 +63,7 @@
 
         </Grid>
         <Grid x:Name="regablak" Visibility="Collapsed">
+            
             <!--Regisztráció cella tartalma-->
             <Grid VerticalAlignment="Bottom" Margin="35,80" Height="240" Grid.Row="1">
                 <Label Content="REGISZTRÁCIÓ" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18"/>
@@ -71,11 +73,13 @@
                     <PasswordBox Margin="0,10" materialDesign:HintAssist.Hint="JELSZÓ" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
                 </StackPanel>
             </Grid>
+            
             <!--Regisztráció gomb-->
             <Button x:Name="Regisztráció" Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" Content="Regisztráció" Grid.Row="1"/>
         </Grid>
         <Grid x:Name="ElfelejtettAblak" Visibility="Collapsed">
-            <!--elfelejtett jelszo cella tartalma-->
+            
+            <!--Elfelejtett jelszo cella tartalma-->
             <Grid VerticalAlignment="Bottom" Margin="35,80" Height="240" Grid.Row="1">
                 <Label Content="ELFELEJTETT JELSZÓ" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5" Foreground="Gray" FontSize="18"/>
                 <StackPanel VerticalAlignment="Top" Margin="35">
@@ -88,9 +92,6 @@
             
             <!--Jelszót kérő gomb gomb-->
             <Button x:Name="ElfelejtettJelszó" Width="150" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,65" Content="Kérem a jelszót!" Grid.Row="1" Click="Button_Click_2"/>
-            <!--Jelszó első pár betűje-->
-                
-            
         </Grid>
     </Grid>
 </Window>

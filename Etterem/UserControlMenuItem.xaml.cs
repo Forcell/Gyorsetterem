@@ -23,6 +23,8 @@ namespace Etterem
     public partial class UserControlMenuItem : UserControl
     {
         MainWindow _context;
+
+        //Lenyíló menü láthatósága
         public UserControlMenuItem(ItemMenu itemMenu, MainWindow context)
         {
             InitializeComponent();
@@ -33,6 +35,8 @@ namespace Etterem
 
             this.DataContext = itemMenu;
         }
+
+        //Ablakváltás
         private void ListViewMenu_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             _context.SwitchScreen(((SubItem)((ListView)sender).SelectedItem).Screen);

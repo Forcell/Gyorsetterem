@@ -7,8 +7,14 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d">
     <Grid>
+        
+        <!--Ikon-->
         <materialDesign:PackIcon Kind="{Binding Path=Icon}" Width="15" Height="15" Margin="10 16" Foreground="White"/>
+        
+        <!--Név-->
         <ListBoxItem x:Name="ListViewItemMenu" Content="{Binding Path=Header}" Padding="37 14" FontSize="15" Foreground="White"/>
+        
+        <!--Lenyíló menü-->
         <Expander x:Name="ExpanderMenu" Header="{Binding Path=Header}" IsExpanded="False" Width="210" HorizontalAlignment="Right" Background="{x:Null}" Foreground="White">
             <ListView x:Name="ListViewMenu" ItemsSource="{Binding Path=SubItems}" Foreground="White" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="ListViewMenu_SelectionChanged">
                 <ListView.ItemTemplate>
@@ -18,5 +24,6 @@
                 </ListView.ItemTemplate>
             </ListView>
         </Expander>
+        
     </Grid>
 </UserControl>

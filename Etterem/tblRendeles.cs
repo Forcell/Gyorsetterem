@@ -8,9 +8,20 @@ namespace Etterem
 {
     public class Rendeles
     {
-        public int id { get; set; }
-        public int etelid { get; set; }
-        public int darab { get; set; }
-        public int rendeloid { get; set; }
+
+        public Rendeles(long id, string nev, string telefon, string cim, string rendelve)
+        {
+            this.id = id;
+            this.nev = nev;
+            this.telefon = telefon;
+            this.cim = cim;
+            this.rendelve = rendelve;
+        }
+
+        public long id { get; set; }
+        public string nev { get; set; }
+        public string telefon { get; set; }
+        public string cim { get; set; }
+        public string rendelve { get; set; }
     }
 }

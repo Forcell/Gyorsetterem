@@ -12,6 +12,8 @@
             <RowDefinition Height="150"/>
             <RowDefinition Height="150"/>
         </Grid.RowDefinitions>
+        
+        <!--Kép-->
         <Image Source="Images/McTomlek.png" Height="200" Width="200" Stretch="Uniform" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
     </Grid>
