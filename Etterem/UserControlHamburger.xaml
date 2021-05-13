@@ -5,7 +5,8 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Etterem"
              mc:Ignorable="d" 
-             d:DesignHeight="1200" d:DesignWidth="950">
+             d:DesignHeight="1200" d:DesignWidth="950"
+             Background="GhostWhite" FontFamily="Segoe UI Emoji">
     <Grid>
 
         <Grid.ColumnDefinitions>

@@ -96,7 +96,7 @@ namespace Etterem {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Etterem;component/usercontrolfizetes.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Etterem;V1.0.0.0;component/usercontrolfizetes.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\UserControlFizetes.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -181,7 +181,7 @@ namespace Etterem {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Etterem;component/usercontrolalkoholos.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Etterem;V1.0.0.0;component/usercontrolalkoholos.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\UserControlAlkoholos.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

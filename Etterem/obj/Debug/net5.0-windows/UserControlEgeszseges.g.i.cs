@@ -213,7 +213,7 @@ namespace Etterem {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Etterem;component/usercontrolegeszseges.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Etterem;V1.0.0.0;component/usercontrolegeszseges.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\UserControlEgeszseges.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
